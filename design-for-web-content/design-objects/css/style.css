@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+* {
+    margin:0; 
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+header{
+    height: 100%;
+    text-align: center;
+    background: #e2877c;
+    padding:3%;
+}
+
+
+
+
+main{
+    background: #f0e7d7;
+	width: 100%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+	overflow: hidden;
+}
+
+#first{
+    width: 80%;
+    float:left;
+    margin:0 auto;
+    padding-left: 13%;
+}
+
+.text{
+    width: 40%;
+    float: right;
+    text-align: left;
+    padding-top: 8%;
+}
+
+
+.img1{
+    width: 50%;
+    border-radius:70%;
+    margin: 3%;
+}
+
+.img2{
+    width: 50%;
+    border-radius:10%;
+    margin: 1%;
+    margin-top: 7.5%;
+    float:left;
+}
+
+#first h1{
+    font-size: 4em;
+    color:#433f2b;
+}
+
+#first h2{
+    font-size: 2em;
+    color:#f36453;
+}
+
+#first p{
+    font-size: 1em;
+    color:#433f2b;
+}
+
+#first a{
+    text-decoration: none;
+    
+}
+
+#first strong{
+    color:#f36453;
+    
+    }
+.copyright {
+	margin:0px auto;
+	width:100%; 
+	background-color:#f36453;
+	color:#ffffff;
+	float:left;
+	position:relative;	
+	margin-top: 0px;
+	overflow: hidden;
+}
+.copyright p
+{
+	text-align:center;
+	padding: 1%;
+    font-size: 0.8em;
+	
+}

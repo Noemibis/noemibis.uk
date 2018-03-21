@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.2em;
+}
+
+header {
+    width: 100%;
+    height: 170px;
+    padding-top: 5%;
+    background: url('../img/img.jpg') no-repeat 20% 40%;
+    text-align: center;
+   
+}
+
+logo{
+    box-shadow: 10px 10px 5px #3a9688;
+}
+
+ul {
+    width: 50%;
+    margin: 0 auto;
+    font-size:1em;
+    color: #267569;
+    list-style: none;
+    
+}
+
+li {
+    font-family: 'Poiret One', cursive;
+    background: #d0e9e6;
+    padding: 20px;
+    margin: 30px;
+    float: left;
+    box-shadow: 10px 10px 5px #3a9688;
+}
+
+
+main {
+    width: 50%;
+    padding-top: 3%;
+    background: #ffffff; 
+    margin: 0 auto;
+    }
+#intro {
+    border-bottom: 20px solid #8eded5;
+}
+
+#ororo {
+    border-bottom: 20px solid #8eded5;
+}
+
+#thetrainline {
+    border-bottom: 20px solid #8eded5;
+}
+
+#duolingo {
+    border-bottom: 20px solid #8eded5;
+}
+
+a {
+  text-decoration: none;
+  color:#3a9688;
+}
+
+
+a:hover {
+    color: #267569;
+}
+
+h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 1.9em;
+    color: #ffffff;
+    text-align: left;
+    padding: 5%;
+    margin-top: 5%;
+    background: #8eded5;
+}
+
+h2 {
+     font-family: 'Poiret One', cursive;
+    font-size: 1.8em;
+    padding-top: 5%;
+    color: #267569;
+}
+
+
+h3 {
+     font-family: 'Poiret One', cursive;
+     color: #3a9688;
+    font-size: 1.3em;
+}
+
+img.left {
+float: left;
+margin: 7px 30px 20px 0;
+}
+
+img.center {
+    width: 100%;
+}
+
+.scrolltop {
+    float:right;
+    background: #8eded5;
+    font-size:25pt;
+    padding:3%;
+    color:#4a847c;
+    margin-top:0%;
+}
+
+footer{
+    background-color: #4a847c;
+    width: 100%;
+    height: 100px;
+    margin-top:15%;
+    padding: 8%px    
+}
+
+.credits {
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 3%;
+}
+
+

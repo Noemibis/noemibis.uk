@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	max-width:600px;
+	margin:25px auto;
+	font-family:Tahoma, Geneva, sans-serif;
+	color:#333;
+	background:#003049; /* Old browsers */
+	background:-moz-linear-gradient(top,  #003049 0%, #4f7789 100%); /* FF3.6+ */
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#003049), color-stop(100%,#4f7789)); /* Chrome,Safari4+ */
+	background:-webkit-linear-gradient(top,  #003049 0%,#4f7789 100%); /* Chrome10+,Safari5.1+ */
+	background:-o-linear-gradient(top,  #003049 0%,#4f7789 100%); /* Opera 11.10+ */
+	background:-ms-linear-gradient(top,  #003049 0%,#4f7789 100%); /* IE10+ */
+	background:linear-gradient(top,  #003049 0%,#4f7789 100%); /* W3C */
+}
+h1, h2, footer {
+	color:#C1E3F2;
+	text-shadow:3px 3px 3px #0b1224; /* firefox & webkit */
+}
+h1 {
+	font-size:2.4em;
+}
+h2 {
+	font-weight:normal;
+}
+article h1 {
+	font-weight:normal;
+	font-size:1.6em;
+	color:#333;
+	text-shadow:none;
+}
+article p {
+	font-family:Cambria, Georgia, "Times New Roman", Times, serif;
+	font-size:1.1em;
+}
+p, footer {
+	margin-top:0.8em;
+	line-height:1.3em;
+}
+article {
+	padding:12px 20px 20px;
+	border:1px solid #002142;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	margin:15px 0;
+	background:#eeeeee; /* Old browsers */
+	background:-moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background:-webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background:-o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+	background:-ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+	background:linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+}
+article p.date {
+	font-family:Calibri, Tahoma, Geneva, sans-serif;
+	font-size:0.8em;
+	color:#555;
+	padding-top:7px;
+	border-top:1px solid #bbb;
+	margin:10px 0 0 0;
+	text-shadow:none
+}
+footer .date {
+	text-align: right;
+}
+img {
+	float:right;
+	margin-left:20px;
+}

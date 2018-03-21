@@ -1,0 +1,1228 @@
+@charset "utf-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    margin:0; 
+    padding:0;
+    box-sizing:border-box;
+}
+
+.group:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background: url("../img/wood.jpg");
+    font-family: 'Titillium Web',Futura,Trebuchet MS,Arial,sans-serif;
+}
+
+h1 {
+    font-family: 'Preside Bold PERSONAL USE ONLY',Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
+    font-size: 4em;
+    padding: 15% 2% 8% 2%;
+    text-align: center;
+    color:#514e47;
+    text-shadow: 2px 2px #a5c257;
+}
+
+h2 {
+    font-family: 'Preside Bold PERSONAL USE ONLY', Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+/*******HEADER*******/
+header{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.logo-container{
+    width: 100%;
+    margin: 0 auto;
+    background: #fdfaed;
+    padding: 10% 15%;
+    overflow: auto;/* to insert everything inside the "icons" box */
+}
+
+.logo{
+    width: 100%;
+}
+
+.logo-container h1{
+     display: none;
+}
+
+nav{
+    width: 100%;
+    text-align: center;
+}
+
+nav a, nav a:visited, nav a:link {
+    width: 100%;
+    font-size: 1.8em;
+    background: #a5c257;
+    text-decoration: none;
+    border-bottom:2px solid #fdfaed;
+    display: block;
+    padding:4% 0%;
+    color: #fdfaed;
+}
+
+nav a:hover, .active {
+    background: #fdfaed;
+    font-size: 1.8em;
+    border:2px solid #a5c257;
+    color: #a5c257;
+    font-weight: 800;
+}
+
+header p{
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: 900;
+    padding: 0.3% 2%;
+    color: #38342f;
+    text-align: right;
+    background:#a5c257;
+}
+/*******END-HEADER*******/
+
+/*******SLIDER*******/
+.slider{
+    width: 100%;
+    height: auto;
+    text-align: center; 
+}
+
+.box{
+    width: 60%;
+    padding: 10% 0;
+}
+
+.slider .writing{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    background: rgba(165, 194, 87, 0.5);/*last one is for opacity*/
+    padding: 25% 10%;
+}
+
+.slider .writing p{
+    font-size: 3.5em;
+    color: #38342f;
+    text-align: center;
+    font-family: 'Preside Bold PERSONAL USE ONLY',Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
+}
+
+.second-line-slider{
+    font-size: 0.4em;
+    font-family: 'Titillium Web',Futura,Trebuchet MS,Arial,sans-serif;
+}
+
+.crackersleft{
+    width: 100%;
+}
+/*******END-HEADER*******/
+
+/*******CATEGORIES*******/
+
+.icons{
+    width: 100%;
+    background: #fdfaed;
+    padding: 10% 0;
+    text-align: center;
+}
+
+.icons ul{
+    overflow: auto;/* to insert everything inside the "icons" box */ 
+}
+
+.icons li{
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 20%;
+}
+
+.icons ul li img{
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.icons a, .icons a:visited, .icons a:link{
+    text-decoration: none;
+    color: #373d3b;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.icons a:hover, .icons a:active {
+    color: #a5c257;
+}
+
+/*******END-CATEGORIES*******/
+
+/*******SCROLL-BUTTON*******/
+.scroll-bar-pages, .scroll-bar {
+    width: 100%;
+    margin: -10% 0% 0% 0;
+    padding: 5% 10%;
+    text-align: right;
+}
+
+.scroll-bar {
+    background: #fdfaed;
+}
+
+.scroll-button, .scroll-button-pages  {
+    width: 25%;
+}
+/*******END-SCROLL-BUTTON*******/
+
+/*******FOOTER*******/
+footer{
+    width: 100%;
+    background: #a5c256;
+    text-align: center;
+    margin-top: 0%;
+    overflow: auto;
+}
+
+footer p{
+    color: #373d3b;
+    font-size: 1em;
+    padding: 6%;
+    font-weight: 800;
+}
+
+.copyright{
+    color:#ffffff;
+    font-weight: 400;
+}
+/*******END-FOOTER*******/
+
+/****************** ABOUT-US ******************/
+
+/*******MR-CLARKS*******/
+.about-us{
+    width: 100%;
+    padding: 0% 5%;
+    overflow: auto;/* to insert everything inside the "icons" box */ 
+    color:#514e47;
+}
+
+.man{
+    width: 95%;
+    padding-top: 10%;
+    padding-right: 5%;
+}
+
+.general-pages-style { 
+    /*this is an identical class connected to "about-us",offers" and "contacts"*/
+    width: 90%;
+    background: rgba(165, 194, 87, 0.5);/*last one is for opacity*/
+    padding: 10% 8%;
+    margin: 10% auto;
+}
+
+.general-pages-style h2{
+    /*this is an identical class connected to "about-us",offers" and "contacts"*/
+    padding: 7% 0%;
+    text-align: center;
+    color:#514e47;
+}
+/*******END-MR-CLARKS*******/
+
+/*******VALUES*******/
+.values{
+    background: #a5c257;
+    padding-top: 30%;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.why-healthy, .quality-food, .mission{
+    width: 90%;
+    margin: 0 auto;
+    background: #fdfaed;
+    border-radius: 12px;
+    margin-bottom: 25%;
+}
+
+.values img{
+    width: 50%;
+    margin-top: -20%;
+}
+
+.why-healthy h2, .quality-food h2, .mission h2{
+    padding: 3% 2%; 
+    color:#a5c257;
+}
+
+.why-healthy p, .quality-food p, .mission p{
+    padding: 5% 10% 10% 10%;
+    text-align: left;
+    color:#514e47;
+}
+/*******END-VALUES*******/
+
+/*******WORK-WITH-US*******/
+.work-with-us {
+    width: 90%;
+    background: rgba(165, 194, 87, 0.5);
+    padding: 5%;
+    margin: 15% 5%;
+}
+
+.shirt{
+    width: 95%;
+    padding-top: 5%;
+}
+
+ .work-with-us h2{
+    padding: 3% 2%; 
+    text-align: center;
+    color:#514e47;
+}
+
+.work-with-us p{
+    padding: 10% 2%;
+    color:#514e47;
+}
+/*******END-WORK-WITH-US*******/
+
+/********************** PRODUCTS **********************/
+
+/*******SLIDER*******/
+.bottles{
+    width: 100%;   
+}
+/*******END-SLIDER*******/
+
+/*******PRODUCTS*******/
+.beige, .green{
+    width: 80%;
+    margin: 15% auto 0;
+    padding-bottom: 10%;
+    overflow: auto;/* to insert everything inside the "icons" box */ 
+}
+
+.beige h2, .green h2{
+    padding: 16% 4% 40% 4%;
+    text-align: center;
+}
+
+.beige h2{
+    color: #514e47;
+    background: #eaeac3;
+}
+
+.green h2{
+    background: #514e47;
+    color: #a5c256;
+}
+
+.beige img, .green img{
+    width: 50%;
+    margin: -30% 0 0 25%;
+}
+
+.beige p, .green p{
+    margin-top: -25%;
+    padding: 40% 7% 10% 7%;
+    font-weight: bold; 
+}
+
+.beige p{
+    color: #eaeac3;
+    background: #514e47;
+}
+
+.green p{
+    background: #a5c256;; 
+    color: #514e47;
+}
+/*******END-PRODUCTS*******/
+
+/*********************** OFFERS ***********************/
+
+/*******CARD*******/
+.fidelity-card{
+    width: 100%;
+    padding: 10% 5%;
+}
+/*******END-CARD*******/
+
+/*******SPECIAL-FRIDAY*******/
+.special-friday{
+    width: 100%;
+    margin-bottom: 10%;
+    background: rgba(56, 52, 47, 0.7);/*last one is for opacity*/
+    overflow: auto;/* to insert everything inside the "icons" box */ 
+}
+
+.calendar {
+    width: 29%;
+    margin-left: -7%;
+    margin-top: 25%;
+    float: left;
+    margin-bottom: 10%;
+}
+
+.special-friday h2{
+    padding: 20% 6% 2% 2%;
+    text-align: center;
+    color: #a5c256;
+    float: left;
+}
+
+.special-friday p {
+    padding: 5% 2% 10% 9%;
+    color: #fdfaed;
+    text-align: left;
+    float: left;
+    width: 70%;
+}
+/*******END-SPECIAL-FRIDAY*******/
+
+/********************** CONTACTS **********************/
+
+/*******SHOP*******/
+.shop{
+    width: 95%;
+    margin-left: 3%;
+}
+/*******END-SHOP*******/
+
+/*******CONTACTS*******/
+.contacts{
+    width:100%;
+    background: #a5c256;
+    padding: 10%;
+    margin:10% 0;
+    overflow: auto;/* to insert everything inside the "icons" box */ 
+}
+
+.contacts h2{
+    text-align: center;
+    color: #38342f;
+    padding-bottom: 15%;
+}
+
+.social {
+    width: 100%;
+    overflow: auto;
+    border-radius: 12px;
+    padding: 5%;
+    background: rgba(56, 52, 47, 0.6);/*last one is for opacity*/
+}
+
+.social img{
+    width: 28%;
+    float:left;
+    margin-right: 5%;
+}
+
+.social p{
+    font-size: 1.1em;
+    padding:10% 0%;
+    color:#ffffff;
+}
+
+.social a, .social a:visited, .social a:link{
+    text-decoration: none;
+}
+
+.social a:hover, .social a:active {
+    font-weight: 900; 
+}
+
+.social li{
+    margin: 10% 0%;
+    overflow: auto;
+    text-align: left;
+}
+
+.googlemaps{
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 15%;
+}
+
+.position{
+    width: 100%;
+    padding: 10% 5%; 
+    overflow: auto;
+}
+
+.position-icon{
+    width: 25%;
+    float:left;
+    margin-right: 5%
+}
+
+.opening-hours{
+    width: 100%;
+    background: #f0f4dc;
+    padding: 13% 8%;
+    border-radius: 12px;
+}
+
+.opening-hours img {
+    width: 60%;
+    margin: 0% 20% 10%;
+}
+
+.opening-hours h3{
+    font-size: 1.5em;
+    padding-bottom: 6%;
+    text-align: center;
+    color:#ea9d49;
+}
+
+.opening-hours table{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.opening-hours tr{
+    border-bottom: 1px solid #a5c257;
+    padding-right: 2%
+}
+
+.opening-hours th{
+    text-align: left;
+    color: #a5c257;
+}
+
+.opening-hours td{
+    text-align: right;
+}
+/*******END-CONTACTS*******/
+
+
+/*********************************************************/
+/******************** RESPONSIVE-470PX *******************/
+/*********************************************************/
+
+@media (min-width:470px){
+    
+    /*******HEADER*******/
+    nav a{
+        padding:2% 0%;
+    }
+    /*******END-HEADER*******/
+    
+    /*******SLIDER*******/
+    .box{
+        width: 45%;
+    }
+    
+    .slider .writing p{
+        font-size: 5em;
+    }
+    /*******END-SLIDER*******/
+    
+    /*******CATEGORIES*******/
+    .icons{
+        padding: 10% 0 2%;
+    }
+    
+    .icons ul li img{
+        width: 100%;
+    }
+    
+    .icons ul{
+        padding: 5% 10%;
+    }
+    
+    .icons li{
+        width: 40%;
+        float: left;
+        margin: 5%;  
+        padding-bottom: 0%;
+    }
+    /*******END-CATEGORIES*******/
+    
+    /*******SCROLL-BUTTON*******/
+    .scroll-bar, .scroll-bar-pages{
+        margin: -10% 0% 0% 0;
+        padding: 5%;
+    }
+
+    .scroll-button, .scroll-button-pages{
+        width: 15%;
+    }
+    /*******END-SCROLL-BUTTON*******/
+    
+    /*******FOOTER*******/
+    footer p{
+        padding: 3%;
+    }
+    /*******END-FOOTER*******/
+    
+    
+/********************** ABOUT-US **********************/
+
+    h1{
+       font-size: 5em;
+     }
+    
+    h2{
+       font-size: 4em;
+    }
+
+/********************** PRODUCTS **********************/
+
+    .beige, .green{
+        width: 70%;
+    }
+
+ /********************** OFFERS **********************/
+
+    .calendar {
+        width: 32%;
+        margin: 12% 9% 7% -4%;
+    }
+
+    .special-friday h2{
+        font-size: 3em;
+        padding: 10% 1% 2% 2%;
+    }
+
+    .special-friday p{
+        width: 62%;
+        padding: 5% 6% 5% 0%;
+    }   
+
+/********************** CONTACTS **********************/
+    
+    .shop {
+        width: 88%;
+        margin-left: 6%;
+    }
+
+    /*******CONTACTS*******/
+    .social p{
+        font-size: 1.5em;
+    }
+    
+    .position{
+        padding:10% 20%
+    }
+    
+    .opening-hours {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .opening-hours img{
+        width: 40%;
+        margin: 0 30% 10%;
+    }
+    /*******END-CONTACTS*******/
+}
+
+/*********************************************************/
+/******************* RESPONSIVE-768PX ********************/
+/*********************************************************/
+
+
+@media (min-width:768px){
+
+    /*******HEADER*******/
+    .logo-container {
+        padding: 2% 35% 4%;
+    }
+
+    nav{
+        background: #a5c257;
+        overflow: auto;
+    }
+
+    nav ul{
+        width: 80%;
+        margin: 0 auto;
+        }
+
+    nav li{
+        width: 20%;
+        float: left;
+        padding: 1%;
+        }
+
+    nav a, nav a:visited, nav a:link {
+        font-size: 1.4em;
+        color: #38342f;
+        font-weight: 600;
+        border-bottom: none;
+    }
+
+    nav a:hover, .active{
+        color: #fdfaed;
+        font-size: 1.4em;
+        font-weight: 800;
+        border: none;
+        background: none;
+    }
+    /*******END-HEADER*******/
+    
+    /*******SLIDER*******/
+    .box{
+        width: 21%;
+        padding: 1%;
+        margin-top: 3%;
+    }
+
+    .slider .writing{
+        width: 40%;
+        height: auto;
+        padding: 5%;
+        margin: 10% 0%;
+        margin-left: 30%;
+        float:left;
+    }
+
+    .slider .writing p{
+        font-size: 3.1em;
+    }
+
+    .crackersleft{
+        width: 45%;
+        float: left;
+        margin-top: -29%;
+        background: none;
+    }
+    /*******END-SLIDER*******/
+    
+    /*******CATEGORIES*******/
+    .icons{
+        padding: 6% 0;
+    }
+    
+    .icons ul {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .icons li{
+        width: 26%;
+        margin: 3%; 
+        padding-bottom: 2%;
+    }
+    /*******END-CATEGORIES*******/
+    
+    /*******SCROLL-BUTTON*******/
+    .scroll-bar, .scroll-bar-pages {
+        padding: 1% 4% 3%;
+        margin: -5% 0 0 0;
+    }
+
+    .scroll-button, .scroll-button-pages{
+        width: 10%;
+    }
+    /*******END-SCROLL-BUTTON*******/
+    
+    
+ /****************** ABOUT-US ******************/   
+    
+    /*******MR-CLARKS*******/
+    h1{
+        padding: 8% 2% 10% 2%;
+    }
+    
+    .about-us{
+        padding: 0% 0 10% 0;
+    }
+
+
+    .man{
+        width: 55%;
+        padding: 0 5%;
+    }
+
+
+    .general-pages-style { 
+        width: 40%;
+        padding: 5% 5%;
+        margin-top: 0%;
+        margin-right: 5%;
+        float:right;
+     }
+
+    .general-pages-style h2{
+        padding: 1% 2%;
+    }
+
+    .general-pages-style p{
+        padding: 5% 0%;
+    }
+    /*******END-MR-CLARKS*******/
+    
+    /*******VALUES*******/
+    .values{
+        width: 100%;
+        background: none;
+        padding-top: 0;
+    }
+    
+    .frame-side{
+        width: 30%;
+        height: 630px;
+        background-color: #8aa249;
+        float: left;
+        padding: 10% 0.8% 2%;
+    }
+    
+    .frame-side h2{
+        font-size: 3em;
+    }
+    
+    .frame-center{
+        width: 40%;
+        background-color: #a5c256;
+        float:left;
+        padding:10% 0% 0% 0%;
+        margin-top: -12%;
+    }
+    
+    .why-healthy, .quality-food, .mission {
+        margin-bottom: 10%;
+    }
+    /*******END-VALUES*******/
+    
+    /*******WORK-WITH-US*******/
+    .work-with-us{
+        text-align: left;
+        padding: 3% 5% 5%;
+        overflow: auto;/* to insert everything inside the "icons" box */
+        margin: 110% 5% 10%;
+    }
+
+    .shirt {
+        width: 44%;
+        padding-top: 3%;
+    }
+    
+    .work-with-us h2{
+        padding: 5% 2%; 
+        text-align: center;
+        color:#514e47;
+    }
+
+    .work-with-us p{
+        width: 45%;
+        padding: 5% 2%;
+        color:#514e47;
+        float: right;
+    }
+    /*******END-WORK-WITH-US*******/
+   
+/********************** PRODUCTS **********************/
+    
+    .products {
+        padding: 5% 10%;
+        overflow: auto;
+    }
+    
+    .beige, .green{
+        width: 50%;
+        float: left;
+        margin: 0;
+        padding: 5% 3%;
+    }
+    
+    .beige h2, .green h2 {
+        height: 271px;
+    }
+    
+    .beige p, .green p{
+        height: 550px;
+    }
+    
+ /*********************** OFFERS ***********************/
+
+    .fidelity-card{
+        width: 50%;
+        padding-top: 0%;
+        padding-right:5%;
+    }
+
+    .calendar {
+        width: 23%;
+        margin: 12% 9% 7% 8%;
+    }
+    
+    .special-friday p {
+        width: 47%;
+        padding: 5% 0% 5% 2%;
+    }
+    
+/*********************** CONTACTS ***********************/
+    
+    .shop{
+        width: 45%;
+        margin-right: 3%;
+    }
+
+    /*******CONTACTS*******/
+    .contacts {
+        padding-bottom: 5%;
+        }
+
+    .contacts h2{
+        padding-bottom: 7%;
+    }
+
+    .social {
+        width: 45%;
+        float: left;
+        padding: 9% 3%;
+    }
+
+    .social p{
+        font-size: 1.1em;
+    }
+
+    .social li{
+        margin: 10% 2%;
+    }
+
+    .googlemaps{
+        float: left;
+        width: 22%;
+        margin: 0 0 0 8%;
+        height: 150px;
+    }
+    
+    .position {
+        width: 25%;
+        float: none;
+        padding: 0% 0% 1% 3%;
+    }
+    
+    .position p{
+        font-size: 1.1em;
+    }
+    
+    .position-icon {
+        width: 30%;
+        float: none;
+        margin: 0% 0 8% 0%;
+    }
+
+    .opening-hours {
+        width: 47%;
+        margin: 5% 0 0 8%;
+        float: left;
+        padding: 3%;
+    } 
+    
+    .opening-hours img {
+        width: 30%;
+        margin: 0% 37% 5%;
+    }
+    
+    .opening-hours h3 {
+        font-size: 1.8em; 
+    }
+
+    .opening-hours table{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.2em;
+    }
+    /*******END-CONTACTS*******/
+}
+
+/*******************************************************/
+/****************** RESPONSIVE-1024PX ******************/
+/*******************************************************/
+
+@media (min-width:1024px) {
+
+    /*******HEADER*******/
+    .logo-container {
+        padding: 2% 38% 4%;
+    }
+
+    nav ul{
+        width: 55%;
+    }
+    /*******END-HEADER*******/
+    
+    /*******SLIDER*******/
+    .slider .writing p {
+        font-size: 4.2em;
+    }
+    
+    .crackersleft{
+        margin-top: -28%;
+    }
+    /*******END-SLIDER*******/
+    
+    /*******CATEGORIES*******/
+    .icons ul{
+        width: 75%;
+    }
+
+    .icons{
+        padding: 0;
+    }
+    /*******END-CATEGORIES*******/
+    
+    /*******SCROLL-BUTTON*******/
+    .scroll-bar, .scroll-bar-pages {
+        margin: -7% 0 0 0;
+        padding: 0% 5.5% 5%;
+    }
+    
+    .scroll-button, .scroll-button-pages {
+        width: 8%;
+    }
+    /*******END-SCROLL-BUTTON*******/
+    
+    /*******FOOTER*******/
+    footer p{
+        padding: 2%;
+    }
+    /*******END-FOOTER*******/
+
+/*********************** ABOUT-US ***********************/
+
+    h1 {
+        padding: 5% 2%;
+    }
+
+    .man{
+        width: 50%;
+        padding: 0 5% 5%;
+    }
+
+    .work-with-us{
+        width: 80%;
+        margin: 75% 10% 10%;
+        padding: 3% 10% 5% 10%;
+    }
+    
+    .frame-center {
+        margin-top: -10%;
+}
+    
+ /*********************** PRODUCTS ***********************/
+        
+        .bottles {
+            width: 70%;
+            margin: 0% 15%;
+        }
+        
+        .products {
+            padding: 5% 2%;
+        }
+    
+        .beige, .green {
+            width: 33%;
+        }  
+    
+        .beige p, .green p{
+            height: 605px;
+            line-height: 1.1;
+        }
+
+/************************* OFFERS ************************/
+
+        .fidelity-card{
+            width: 50%;
+            padding-top: 0%;
+            padding-right:5%;
+        }
+
+        .calendar {
+            width: 20%;
+            margin: 2% 10% 2% 20%;
+        }
+
+        .rotate h2{
+            font-size: 4em;
+            padding: 8% 2% 3%;
+        }
+
+        .rotate p{
+            font-size: 1.2em;
+            padding: 5% 5% 5% 0;
+            width: 50%;
+        }
+
+/************************ CONTACTS ***********************/
+
+        .shop{
+            width: 40%;
+            margin-right: 3%;
+        }
+
+        /*******CONTACTS*******/
+        .contacts {
+            padding: 5% 10% 4%;
+        }
+
+        .contacts h2{
+            padding-bottom: 10%;
+        }
+
+        .social {
+            width: 35%;
+            padding: 1% 3%;
+        }
+
+        .social img{
+            width: 27%;
+        }
+    
+        .googlemaps{
+            width: 37%;
+            margin: 0 0 0 3%;
+            height: 100px;
+        }
+    
+        .position-icon {
+            width: 21%;
+            float: left;
+            margin: 0% 5% 0% 0%;
+        }
+    
+        .opening-hours {
+            width: 37%;
+            margin:7% 0 0 3%;
+        }
+    
+        .opening-hours img {
+            width: 28%;
+            margin: -23% 36% 2%;
+        }
+        
+        .opening-hours h3 {
+            padding-bottom: 6%;
+        }
+    
+        .opening-hours ul {
+            padding-left: 7%;
+        }
+        /*******END-CONTACTS*******/
+    
+}
+
+
+/*******************************************************/
+/****************** RESPONSIVE-1260PX ******************/
+/*******************************************************/
+
+
+@media (min-width:1260px){
+    
+        /*******SLIDER*******/
+        .slider .writing p {
+            font-size: 5em;
+        }
+        
+        .crackersleft {
+            margin-top: -26%;
+        }
+ 
+        .slider .writing {
+            margin: 9% 0%;
+            margin-left: 30%;
+        }
+        /*******END-SLIDER*******/
+    
+        /*******CATEGORIES*******/
+        .icons ul {
+            padding: 2% 10% 8% 10%;
+        }
+        /*******END-CATEGORIES*******/
+    
+        /*******FOOTER*******/
+        footer p {
+            padding: 1%;
+        }
+        /*******END-FOOTER*******/
+    
+/********************** ABOUT-US **********************/
+
+    .man{
+        width: 46%;
+    }
+
+    .work-with-us{
+        width: 70%;
+        margin: 65% 15% 10%;
+        padding: 3% 7% 5% 7%;
+    }
+    
+    .margin-title{
+        margin: 2% 0;
+    }
+}

@@ -1,0 +1,899 @@
+@charset "utf-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {margin:0; 
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Junge',Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD;
+    margin:0 auto;
+    background: #eae8db;
+    text-align: center;
+    padding: 0 0 10% 0;
+}
+
+
+nav{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5%;
+    font-family: 'Junge',Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD;
+}
+
+#logo{    
+    width: 230px;
+    height: 162px;
+    border-radius: 90%;
+    padding: 40px;
+    background: #8e1e46;
+    border-bottom:1px solid #eae8db;
+    box-shadow: 2px 5px #939393;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#logo-author{    
+    width: 230px;
+    height: 162px;
+    border-radius: 90%;
+    padding: 40px;
+    background: #489a98;
+    border-bottom:1px solid #eae8db;
+    box-shadow: 2px 5px #939393;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#logo-works{    
+    width: 230px;
+    height: 162px;
+    border-radius: 90%;
+    padding: 40px;
+    background: #866647;
+    border-bottom:1px solid #eae8db;
+    box-shadow: 2px 5px #939393;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav h1{
+    font-size: 2.2em;
+    color: #eae8db;
+    font-family: 'Alex Brush',Brush Script MT, Perpetua;
+    font-weight: 600;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 10% 0% 2% 0%;
+}
+
+nav li{
+    line-height: 1.7;   
+}
+
+nav a{
+    font-weight: 900;
+    font-size: 1.2em;
+    color:#515454; 
+    text-decoration: none;
+    padding: 1%;
+
+}
+
+nav a:hover {
+    color: #8e7d68;
+}
+
+nav a:focus, a:visited{
+    color: #5d4d39;   
+}
+
+a.active{
+      color: #8e1e46;
+      border-bottom:1px solid #8e1e46;
+}
+
+a.active-author{
+      color: #3d9d9b;
+      border-bottom:1px solid #3d9d9b;
+}
+
+a.active-works{
+      color: #866647;
+      border-bottom:1px solid #866647;
+}
+
+#home, main {
+    width: 83%;
+    margin:2% 10% 10% 10%;
+    background: #ffffff;
+    border:2px solid #8e1e46;
+    padding: 10% 5%;
+    text-align: center;
+    overflow: hidden;
+     box-shadow: 5px 10px #939393;
+    
+    }
+
+#author {
+    width: 83%;
+    overflow: hidden; 
+    box-sizing: border-box;
+    margin:2% 10% 2% 10%;
+    background: #ffffff;
+    border:2px solid #3d9d9b;
+     padding: 10% 5%;
+    text-align: center;
+}
+
+#works {
+    width: 83%;
+    overflow: hidden; 
+    box-sizing: border-box;
+    margin:2% 10% 2% 10%;
+    background: #ffffff;
+    border:2px solid #866647;
+    padding: 10% 5%;
+    text-align: center;
+    font-family: 'BoereTudor';
+}
+
+h2{
+    font-family: 'Alex Brush',Brush Script MT,cursive;
+    color:#8e1e46;
+    padding: 0% 0 10% 0 ;
+    border-bottom:1px solid #8e1e46;
+    font-size: 3em;
+    text-align: center;
+}
+
+#author h2{
+    color: #3d9d9b;
+    border-bottom:1px solid #3d9d9b;
+}
+
+#works h2{
+    color: #866647;
+    border-bottom:1px solid #866647;
+}
+
+#home p{
+    display:flex;
+    flex-direction: column;
+}
+
+.love {
+    width: 100%;
+    font-family: 'Alex Brush',Brush Script MT, Perpetua;
+    color: #8e1e46;
+    font-size: 8em;
+    text-align: center;
+    line-height: 0.8;
+    padding-top: 15%;
+}
+
+.isnot {
+    width: 100%;
+    text-align: center;
+    font-family: 'Junge',Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD;
+    font-size: 1em;
+    color: #866647;
+}
+
+.alteration {
+    width: 100%;
+    text-align: center;
+    font-family: 'Junge',Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD;
+    font-size: 1.7em;
+    color: #3d9d9b;
+}
+
+.remover {
+    width: 100%;
+    font-family: 'Junge',Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD;
+    font-size: 0.75em;
+    line-height: 1.5;
+    color: #866647;
+}
+
+.no {
+    width: 100%;
+    font-family: 'Junge',Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD;
+    font-size: 2.3em;
+    color: #8e1e46;
+}
+
+.mark {
+    width: 100%;
+    font-family: 'Junge',Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD;
+    font-size: 1.8em;
+    line-height: 1.3;
+    color: #8e1e46;
+}
+
+.tempests {
+    width: 100%;
+    font-family: 'Junge',Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD;
+    font-size: 1.27em;
+    color: #866647;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.never {
+    width: 100%;
+    font-family: 'Junge',Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD;
+    font-size: 2.45em;
+    color: #3d9d9b;
+    text-align: center;
+}
+
+.shaken {
+    width: 100%;
+    font-family: 'Alex Brush',Brush Script MT, Perpetua;
+    line-height: 0.7;
+    font-size: 3.5em;
+    color: rgb(142, 30, 70);
+    text-align: center;
+}
+
+#entire a {
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 800;
+    font-family: 'Junge',Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD;
+    line-height: 4;
+    color: #484848;
+    font-size: 0.6em;
+    padding-bottom: 10%
+}
+
+#entire a:hover {
+    color: #8e1e46;
+}
+
+# home nav a:active, a:focus, a:visited{
+    color: #484848;
+}
+
+#col1{
+    width: 100%; 
+    padding: 10% 5% 1% 5%;
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+}
+
+#col1 p{
+    font-family: 'Junge',Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD;
+    float: right;
+    font-size: 1em;
+    line-height: 1.2;
+    color:#000000;
+    text-align: left;
+    padding: 3%;
+  
+}
+
+#col2{
+    width: 100%; 
+    padding: 10% 5% 1% 5%;
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;   
+}
+
+#col2 p{
+    font-family: 'Junge',Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD;
+    float: right;
+    font-size:1em;
+    line-height: 1.2;
+    color:#000000;
+    text-align: left;
+    padding: 3%;
+    padding-bottom: 15%;
+  
+}
+
+.capital {
+    line-height: 0.8;
+    font-family: 'Ruthie',Goudy Old Style,Garamond,Big Caslon, Times; 
+    font-weight: normal;
+    font-style: normal;
+    font-size: 4em;
+    margin-right: 15%;
+    color: #8e1e46;
+    float: left;
+}
+
+#author .capital {
+    color: #3d9d9b;
+}
+
+#works .capital {
+    color: #866647;
+}
+
+
+cite {
+    width: 100%;
+    display: block;
+    font-family: 'Junge',Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD;
+    font-size: 0.73em;
+    text-align: center;
+}
+
+cite a:link {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: #cfc0ad;
+}
+
+
+
+
+
+
+
+
+@media (min-width:440px){
+    
+h2{
+    font-size: 4em;
+}    
+    
+.love{ 
+         font-size: 12.2em;
+      }
+
+.isnot {
+    line-height: 1.2;
+    font-size: 1.4em;
+} 
+
+
+.alteration {
+    line-height: 1.2;
+    font-size: 2.37em;
+}
+
+.remover {
+    font-size: 1.07em;
+}
+    
+.no {
+    line-height: 1;
+    font-size: 3.3em;
+
+}
+
+.mark {
+    line-height: 1.2; 
+    font-size: 2.6em;
+}
+
+.tempests {
+    font-size: 1.76em;
+}
+
+.never {
+    line-height: 0.9;
+    font-size: 3.44em;
+}
+
+.shaken {
+    line-height: 0.9;
+    font-size: 5em;
+}
+
+#entire a {
+    font-weight: 800;
+    line-height: 4;
+    font-size: 1.1em;
+}
+    
+#col1 p{
+    font-size: 1.2em;
+    line-height: 1.2;
+    padding: 1%;
+  
+}
+
+#col2 p{
+    font-size: 1.2em;
+    line-height: 1.2;
+    padding: 1%;
+    padding-bottom: 5%;
+}
+
+.capital {
+    font-size: 4em;
+}
+
+cite {
+          font-size: 1em;
+          text-align: left;
+       }
+
+  
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    
+      #logo, #logo-author, #logo-works{    
+        width: 250px;
+        height: 200px;
+       margin-bottom: 3%;
+      } 
+
+
+      nav h1{
+        font-size: 1.5em;
+     }
+
+       nav ul {
+           display: flex;
+           justify-content: center;
+      }
+
+      nav li{ 
+            padding: 0% 10%;
+      }
+    
+     #home, #author, #works, main {
+        padding: 10% 5%;
+       }
+
+      nav a{
+            font-size: 1.8em;
+            padding: 0%;
+            border-bottom: none;
+       }
+    
+      .love {
+          line-height: 0.8;
+           font-size: 21.7em;
+       }
+
+      .isnot {
+           font-size: 2.45em;
+        } 
+
+
+      .alteration {
+          font-size: 4.2em;
+       }
+
+      .remover {
+          font-size: 1.9em;
+          line-height: 1.3;
+       }
+    
+      .no {
+          line-height: 1;
+          font-size: 5.7em;
+       }
+
+      .mark {
+         line-height: 1.2;
+         font-size: 4.6em;
+      }
+
+      .tempests {
+        font-size: 3.13em;
+          line-height: 1.3;
+      }
+
+      .never {
+          line-height: 1;
+          font-size: 6em;
+      }
+
+      .shaken {
+        line-height:0.8;
+        font-size: 9em;
+       }
+
+      #entire a {
+         line-height: 4;
+         font-size: 1.2em;
+       }
+
+
+       h2{
+         padding: 1% 0 5% 0 ;
+         font-size: 6em;
+       }
+
+       #col1, #col2{
+          width: 70%; 
+          padding: 10% 5% 1% 5%;
+          margin: 0 auto;
+          text-align: left;
+          overflow: hidden;
+       }
+
+    
+       #col1 p{
+           font-size: 1.5em;
+           line-height: 1.2;
+           padding: 0%;
+       }
+
+
+       #col2 p{
+           font-size:1.5em;
+           line-height: 1.2;
+           padding: 0%;
+           padding-bottom: 5%;
+       }
+
+      .capital {
+          line-height: 0.8;
+          font-size: 5em;
+          margin-right: 17%;
+       }
+
+      cite {
+          font-size: 1em;
+          text-align: left;
+       }
+
+}
+
+
+
+@media (min-width: 1024px) {
+   #logo, #logo-author, #logo-works{    
+        width: 250px;
+        height: 200px;
+       margin-bottom: 3%;
+      } 
+    
+    nav{
+        padding: 8%;
+    }
+
+       nav ul {
+           width: 70%;
+           margin: 0 auto;
+           display: flex;
+           justify-content: center;
+           padding:7% 0 1% 0;
+      }
+
+      nav li{ 
+            padding: 0% 10%;
+      }
+
+      nav a{
+            font-size: 1.6em;
+            font-weight: 900;
+            padding: 0%;
+            border-bottom: none;
+       }
+     
+       #home, #author, #works, main {
+           width: 62%;
+           margin: 0 auto;
+           overflow: hidden;
+           padding: 10% 5%;
+       }
+    
+    
+      .love {
+           line-height: 0.7;
+            font-size: 20em;
+        }
+
+      .isnot {
+           font-size: 2.3em;
+        } 
+
+
+      .alteration {
+          font-size: 3.9em;
+       }
+
+      .remover {
+          font-size: 1.75em;
+          line-height: 1.1em;
+       }
+    
+      .no {
+          line-height: 1;
+          font-size: 5.3em;
+       }
+
+      .mark {
+         line-height: 1.3;
+         font-size: 4.2em;
+      }
+
+      .tempests {
+          line-height: 1;
+        font-size: 2.9em;
+      }
+
+      .never {
+          line-height: 1;
+          font-size: 5.7em;
+      }
+
+      .shaken {
+        line-height: 0.7;
+        font-size: 9em;
+       }
+
+      #entire a {
+         line-height: 4;
+         font-size: 1.2em;
+       }
+
+
+       h2{
+         padding: 1% 0 5% 0 ;
+         font-size: 6em;
+       }
+       
+        #col1{
+        width: 50%;
+        margin: 0;
+        float: left;
+        padding: 5% 2%;
+        }
+    
+        #col2{
+        
+        width: 50%;
+        margin: 0;
+        float: right;
+             padding: 5% 2%;
+        }
+
+       #col1 p{
+           font-size: 1.3em;
+           line-height: 1.2;
+           padding: 0%;
+       }
+
+
+       #col2 p{
+           font-size:1.3em;
+           line-height: 1.2;
+           padding: 0%;
+           padding-bottom: 5%;
+       }
+
+      .capital {
+          line-height: 0.8;
+          font-size: 5em;
+          margin-right: 24%;
+       }
+    
+        #author .capital, #works .capital {
+          line-height: 0.8;
+          font-size: 5em;
+          margin-right: 6%;
+       }      
+
+
+      cite {
+          font-size: 1em;
+          text-align: left;
+       }
+  
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+    
+    #logo, #logo-author, #logo-works{   
+        width: 250px;
+        height: 200px;
+      } 
+    
+    nav{
+        padding: 3%;
+    }
+    
+
+    nav ul {
+           width: 70%;
+           margin: 0 auto;
+           display: flex;
+           justify-content: center;
+           padding:2% 0 1% 0;
+      }
+
+      nav li{ 
+            padding: 0% 10%;
+      }
+
+      nav a{
+            font-size: 1.6em;
+            font-weight: 900;
+            padding: 0%;
+            border-bottom: none;
+       }
+    
+      main, #home, #author, #works,{
+           width: 57%;
+           margin: 0 auto;
+       }
+    
+    
+       .love {
+           line-height: 0.7;
+            font-size: 20em;
+        }
+
+      .isnot {
+           font-size: 2.3em;
+        } 
+
+
+      .alteration {
+          font-size: 3.9em;
+       }
+
+      .remover {
+          font-size: 1.75em;
+          line-height: 1.1em;
+       }
+    
+      .no {
+          line-height: 1;
+          font-size: 5.3em;
+       }
+
+      .mark {
+         line-height: 1.3;
+         font-size: 4.2em;
+      }
+
+      .tempests {
+          line-height: 1;
+        font-size: 2.9em;
+      }
+
+      .never {
+          line-height: 1;
+          font-size: 5.7em;
+      }
+
+      .shaken {
+        line-height: 0.7;
+        font-size: 9em;
+       }
+      #entire a {
+         line-height: 4;
+         font-size: 1.2em;
+       }
+
+
+       h2{
+         padding: 1% 0 5% 0 ;
+         font-size: 6em;
+       }
+       
+        #col1{
+        width: 50%;
+        margin: 0;
+        float: left;
+        }
+    
+        #col2{
+        
+        width: 50%;
+        margin: 0;
+            float: right;
+        }
+
+       #col1 p{
+           font-size: 1.3em;
+           line-height: 1.2;
+           padding: 0%;
+       }
+
+
+       #col2 p{
+           font-size:1.3em;
+           line-height: 1.2;
+           padding: 0%;
+           padding-bottom: 5%;
+       }
+
+      .capital {
+          line-height: 0.8;
+          font-size: 5em;
+       }
+    
+   
+
+      cite {
+          font-size: 1em;
+          text-align: left;
+       }
+
+    
+    
+}
+
+
+
+
