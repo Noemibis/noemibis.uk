@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /error/
+Disallow: /includes/
+
+Sitemap: https://domain/film-promotion-website/sitemap.xml

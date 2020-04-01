@@ -34,7 +34,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
 }
 
 ol, ul {
@@ -61,14 +61,33 @@ table {
     box-sizing:border-box;
 }
 
-h2{
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 3em;
+a{
+    text-decoration: none;      
+}
+
+h1, h2, h3, nav ul li a, .book-tickets p,
+.circle > p:nth-child(6){
+    font-family: 'Luckiest Guy', Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
 }
 
 h1{
-    font-family: 'Luckiest Guy', cursive;
     font-size: 2.5em;
+}
+
+h2{
+    font-size: 3em;
+}
+
+h3{
+    font-size: 2.3em;
+}
+
+bold, strong{
+    font-weight: 700;
+}
+
+em{
+    font-style: italic; 
 }
 
 /**************** NAVIGATION ****************/
@@ -80,23 +99,69 @@ nav{
     text-align: center;
     font-size: 1.2em;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav:nth-child(1) > a:nth-child(1) > img:nth-child(1){
+    width: 95px;
+    float: left;
+    padding: 0 0 0 17px;
+}
+
+nav ul {
+    margin: 15px 5px;
+    width: 146px;
 }
 
 nav ul li{
     display:inline;
-    padding: 5%;
+    padding: 10% 5%;
 }
 
-nav a{
-    font-family: 'Luckiest Guy', cursive;
+nav ul li a:link, 
+nav ul li a:visited{
     text-decoration: none;
     text-transform: uppercase;
-    color:white;
+    color: #0084cc;
 }
+
+nav ul li a:hover,
+nav ul li a:focus{
+    text-shadow: 2px 0 0 #164456, -2px 0 0 #164456, 0 2px 0 #164456, 0 -2px 0 #164456, 1px 1px #164456, -1px -1px 0 #164456, 1px -1px 0 #164456, -1px 1px 0 #164456;    
+}
+
+nav .active,  
+nav ul li a:active{
+    text-shadow: -2px 0 0 #5f197c, -2px 0 0 #5f197c, 0 2px 0 #5f197c, 0 -2px 0 #5f197c, 1px 1px #5f197c, -1px -1px 0 #5f197c, 1px -1px 0 #5f197c, -1px 1px 0 #5f197c;
+}
+
+/**** ANIMATION-HOVER-LOGO *****/
+.animation:hover{
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/**** END-ANIMATION-HOVER-LOGO *****/
 
 /**************** END-NAVIGATION ****************/
 
-/**************** MONSTER-INC ****************/
+/**************** MONSTERS-INC-CENTRAL-SLIDE ****************/
 .monsters-inc{
     width: 100%;
     text-align: center;
@@ -106,12 +171,14 @@ nav a{
     display: none;
 }
 
-.monsters-inc > img:nth-child(2), .monsters-inc > img:nth-child(4) {
+.monsters-inc > img:nth-child(2), 
+.monsters-inc > img:nth-child(4) {
     width: 100%;
 }
 
 .monsters-inc > img:nth-child(2) {
     padding-left: 30%;
+    padding-top:40px;
 }
 
 .monsters-inc > img:nth-child(3){
@@ -122,9 +189,11 @@ nav a{
     padding-right:45%;  
     display: block;
 }
-/**************** END-MONSTER-INC ****************/
 
-/*************** BOOK-YOUR-TICKET ****************/
+/**************** END-MONSTERS-INC-CENTRAL-SLIDE ****************/
+
+/*************** BOOK-TICKET ****************/
+
 .book-tickets{
     width: 100%;
     padding: 25% 15%;
@@ -133,7 +202,7 @@ nav a{
     border-top: 5px solid rgba(172, 225, 13, 1);
 }
 
-.book-tickets h2{
+.book-tickets p{
     width: 100%;
     border-radius: 12px;
     margin-bottom: 10%;
@@ -142,12 +211,32 @@ nav a{
     box-shadow: 7px 8px #504d5b;
     font-size: 2em;
     text-align: center;
-    color: #fff;
 }
-/************* END-BOOK-YOUR-TICKET *************/
+
+.book-tickets a:link, 
+.book-tickets a:visited,
+.circle > p:nth-child(6) > a:link,
+.circle > p:nth-child(6) > a:visited {
+    color: #6a6569;
+}
+
+.book-tickets a:hover, 
+.book-tickets a:active,
+.book-tickets a:focus,
+.circle > p:nth-child(6) > a:hover,
+.circle > p:nth-child(6) > a:active,
+.circle > p:nth-child(6) > a:focus{
+    color: #4731a0;
+}
+
+/************* END-BOOK-TICKET *************/
 
 
-/************** INFORMATION-TICKETS **************/
+/************** INFO-TICKET-CIRCLES **************/
+.information-ticket strong, .information-ticket bold{
+    color: #afe2dd;
+}
+
 .information-ticket{
     padding: 15% 5%;
     background: url("../img/pattern.jpg");
@@ -165,7 +254,7 @@ nav a{
 }
 
 .circle-left{
-    padding: 52px 19px;
+    padding: 60px 19px;
 }
 
 .circle{
@@ -173,7 +262,7 @@ nav a{
     height: 280px;
     border-radius: 214px;
     margin: 30px auto;
-    padding: 87px 5px;
+    padding: 59px 5px;
     background: #6759a0;
     /*vertical-align:middle;*/ 
 }
@@ -183,31 +272,33 @@ nav a{
 }
 
 .information-ticket h3{
-    margin-bottom: 3%;
-    font-size: 1.3em;
+    margin-bottom: 1%;
     font-weight: 900;
     color: #bbd153;
+    font-size: 1.8em;
 }
+
+/************ INSIDE-THE-CIRCLES ************/
 
 .circle h3 + p{
     font-size: 1.2em;
 }
 /** TICKETS BUTTON **/
-.circle p:nth-child(3) { 
+.circle > p:nth-child(6) { 
     width: 115px;
     border-radius: 12px;
-    margin: 6% auto;
+    margin: 3% auto;
     padding: 2%;
     background: #bbd153;
     box-shadow: 3px 4px #504d5b;
-    font-family: 'Luckiest Guy', cursive;
     font-size: 1.3em;
 }
 /** END-TICKETS BUTTON **/
-
+/************ END-INSIDE-THE-CIRCLES ************/
 /************ END-INFORMATION-TICKETS ************/
 
 /************ CHARACTERS-ON-THE-DOOR *************/
+
 .characters-on-the-door{
     padding: 15% 10%;
 }
@@ -221,6 +312,7 @@ nav a{
 /*title-through-the-door*/
 .characters-on-the-door > h2:nth-child(2){
     text-align: center;
+    margin-bottom: 30px;
     color: #ea8bb1;
     text-shadow: 3px 4px #6759a0;
 }
@@ -229,20 +321,21 @@ nav a{
     width: 100%;
     border-radius: 12px;
     padding:7%;
-    background: #ea8bb1;
+    background: #fcbbd5;
 }
 
 .through-the-door p{
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.2;
     text-align: left;
-    color: #ffffff;
+    color: #76087f;
+    padding-bottom:1em;
 }
 /************* END-THROUGH-THE-DOOR *************/
 
-/****************** CHARACTERS ******************/
+/****************** CHARACTERS-WITH-JAVASCRIPT ******************/
 .characters{
-    padding: 10%;
+    padding: 10% 6%;
     background: #c1dae5;
     overflow: auto;
     padding-bottom: 15%;
@@ -251,100 +344,78 @@ nav a{
 .characters h2{
     text-align: center;
     color: #6759a0;
+    text-shadow: 3px 4px #729faf;
 }  
 
 
 .characters ul {
     width: 100%;
     padding:10% 5%;
-}
-
-.characters ul {
-    width: 100%;
     overflow: auto;
 }
 
-.characters li, .characters li:hover{
+.characters li {
     width: 200px;
     height: 200px;
     margin: 10% auto 15%;
     border-radius: 12px;
     text-align: center;
-    color: #000;
     color: rgba(0, 0, 0, 0);
     box-shadow: 3px 7px 12px #3d3737;
 }
 
-.mike{
-    background: url("../img/green-square.jpg") no-repeat;
+.monsters{
     background-size: contain;
     background-position: center center;
+    background-repeat: no-repeat;
 }
 
-.mike:hover, .mike:active {
-    background: url("../img/green-square-second.jpg") no-repeat;
-    background-size: contain;
-    background-position: center center;
+.mike{
+    background-image: url("../img/green-square.jpg");
+}
+
+.mike.jshover {
+    background-image: url("../img/green-square-second.jpg");
 }
 
 .sulley{
-    background: url("../img/blue-square.jpg") no-repeat;
-    background-size: contain;
-    background-position: center center;
+    background-image: url("../img/blue-square.jpg");
 }
 
-.sulley:hover, .sulley:active {
-    background: url("../img/blue-square-second.jpg") no-repeat;
-    background-size: contain;
-    background-position: center center;
+.sulley.jshover{
+    background-image: url("../img/blue-square-second.jpg");
 }
 
 .boo{
-    background: url("../img/baby-square.jpg") no-repeat;
-    background-size: contain;
-    background-position: center center;
+    background-image: url("../img/baby-square.jpg");
 }
 
-.boo:hover, .boo:active {
-    background: url("../img/baby-square-second.jpg") no-repeat;
-    background-size: contain;
-    background-position: center center;
+.boo.jshover {
+    background-image: url("../img/baby-square-second.jpg");
 }
 
 .randall{
-    background: url("../img/violet-square.jpg") no-repeat;
-    background-size: contain;
-    background-position: center center;
+    background-image: url("../img/violet-square.jpg");
 }
 
-.randall:hover, .randall:active {
-    background: url("../img/violet-square-second.jpg") no-repeat;
-    background-size: contain;
-    background-position: center center;
+.randall.jshover {
+    background-image:  url("../img/violet-square-second.jpg");
 }
 
 .henry{
-    background: url("../img/gray-square.jpg") no-repeat;
-    background-size: contain;
-    background-position: center center;
+    background-image: url("../img/gray-square.jpg");
 }
 
-.henry:hover, .henry:active {
-    background: url("../img/gray-square-second.jpg") no-repeat;
-    background-size: contain;
-    background-position: center center;
+.henry.jshover  {
+    background-image:  url("../img/gray-square-second.jpg");
 }
 
 .celia{
-    background: url("../img/pink-square.jpg") no-repeat;
-    background-size: contain;
-    background-position: center center;
+    background-image: url("../img/pink-square.jpg");
 }
 
-.celia:hover, .celia:active {
-    background: url("../img/pink-square-second.jpg") no-repeat;
-    background-size: contain;
-    background-position: center center;
+.celia.jshover {
+    background-image: url("../img/pink-square-second.jpg");
 }
 
 .mike, .boo, .henry{
@@ -359,7 +430,7 @@ nav a{
     transform: rotate(-10deg);
 }
 
-.mike:hover, .boo:hover, .henry:hover, .sulley:hover, .randall:hover, .celia:hover{
+.monsters.jshover{
     -webkit-transition: -webkit-transform 1s;
     -moz-transition: transform 1s;
     transition: transform 1s;
@@ -368,47 +439,123 @@ nav a{
     transform: rotate(0deg);
 }
 
-
 /**************** END-CHARACTERS ****************/
 
-.fifth-section{
+/*********** CREDITS-DOORS-WITH-JAVASCRIPT ***********/
+
+.inside-the-door{
+    background-image: url("../img/wall.jpg");
+    background-size: 450px;
+    padding: 10% 0;
+}
+
+.inside-the-door h2{
     text-align: center;
-    background:url("../img/flowers.png") no-repeat;
-    background-size: auto 242px;
-    padding: 15% 7% 20%;
+    padding-bottom: 40px;
+    color: #60632a;
+    text-shadow: 3px 4px #b7ba96;
 }
 
-.fifth-section img{
-    width: 75%;
-    margin: 5%;
+.doors{
+    width: 320px;
+    height: 300px;
+    margin: 0 auto;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-.fifth-section h2{
+.doors p {
+    width: 34%;
+    float: right;
+    font-size: 0.9em;
     text-align: center;
-    color: #e83e61;
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 2em;
-    margin: 10% 0%;
 }
 
-.fifth-section ul {
-    text-align: left;
-    padding: 0 10%;
+.orange-door p{
+    margin: 73px 46px 0px 151px;
 }
 
-.fifth-section li{
-    color: #389b96;
-    padding-bottom: 0.3em;
-    line-height: 1.2;
+.orange-door{
+    background-image: url("../img/orange-door.png");
 }
 
-.bold{
-    font-weight: 900;
-    color: #7b4997;
-    display:block; /* to avoid using br on html */
-    /*set display:inline to return back */
+.orange-door.jsclick{
+    background-image: url("../img/orange-door-open.png");
+    color: transparent;    
 }
 
+.green-door p{
+    margin: 82px 159px 0px 151px;
+}
+
+.green-door{
+    background-image: url("../img/green-door.png");
+}
+
+.green-door.jsclick{
+    background-image: url("../img/green-door-open.png");
+    color: transparent;    
+}
+
+.beje-door p{
+    margin: 74px 41px 0px 151px;
+}
+
+.beje-door{
+    background-image: url("../img/beje-door.png");
+}
+
+.beje-door.jsclick{
+    background-image: url("../img/beje-door-open.png");
+    color: transparent;    
+}
+
+.blue-door p{
+    margin: 88px 154px 0px 151px;
+}
+
+.blue-door{
+    background-image: url("../img/blue-door.png");
+}
+
+.blue-door.jsclick{
+    background-image: url("../img/blue-door-open.png");
+    color: transparent;    
+}
+
+.violet-door p{
+    margin: 53px 36px 0px 151px;
+    width: 133px;   
+}
+
+.violet-door{
+    background-image: url("../img/violet-door.png");
+}
+
+.violet-door.jsclick{
+    background-image: url("../img/violet-door-open.png");
+    color: transparent;    
+}
+
+.pink-door p{
+    margin: 81px 168px 0px 151px;
+    width: 103px;
+}
+
+.pink-door{
+    background-image: url("../img/pink-door.png");
+}
+
+.pink-door.jsclick{
+    background-image: url("../img/pink-door-open.png");
+    color: transparent;    
+}
+
+
+/**************** END-DOORS ****************/
+
+/**************** FOOTER ****************/
 footer{
     background: rgba(172, 225, 13, 0.6);
     padding: 5% 2%;
@@ -416,10 +563,24 @@ footer{
     color: #7b4997;
 }
 
+footer a:link, footer a:visited{
+    font-weight: 900;
+    color: #389b96;
+    line-height: 1.7;
+}
+
+footer a:hover, footer a:active, footer a:focus{
+    color: rgba(5, 95, 152,1);
+}
+/**************** END-FOOTER ****************/
+
+
 /*************************************************/ 
 /*                   ABOUT                       */
 /*************************************************/
 
+
+/************ AMAZING-MONSTERS-SLIDE ************/
 .monsters-pages{
     width: 100%;
     text-align: center;
@@ -443,14 +604,14 @@ footer{
     border-radius: 12px;
     text-shadow: 2px 2px 3px black;
 }
+/************ END-AMAZING-MONSTERS-SLIDE ************/
 
-.green{
-    background: rgba(172, 225, 13, 0.4);
-}
+/************ BOXES-INFO ************/
 
 .boxes-info > h2:nth-child(1){
     width: 100%;
     color:#ea8bb1;
+    text-shadow: 3px 4px #6759a0;
     background: url("../img/flowers.png") ;
     background-size: contain;
     text-align: center;
@@ -458,8 +619,9 @@ footer{
     margin: 10% 0 0;
 }
 
-/*trailer-on-youtube**/
-.boxes-info > iframe:nth-child(2), .boxes-info > iframe:nth-child(6), .boxes-info > iframe:nth-child(7){
+.boxes-info > iframe:nth-child(2), 
+.boxes-info > iframe:nth-child(6), 
+.boxes-info > iframe:nth-child(7){
     width: 100%;
 }
 
@@ -467,7 +629,8 @@ footer{
    padding: 5% 10% 20%; 
 }
 
-.boxes-info > iframe:nth-child(6), .boxes-info > iframe:nth-child(7){
+.boxes-info > iframe:nth-child(6), 
+.boxes-info > iframe:nth-child(7){
     padding: 12% 10% 10%;
     background: #6759a0;
     display: block;
@@ -476,12 +639,13 @@ footer{
 .box-description{
     width: 100%;
     padding: 10%;
-    background: #ea8bb1;
+    background: #c96d93;
     line-height: 1.2;
 }
 
 .box-description p{
     color:white;
+    padding-bottom:1em;
 }
 
 .boxes-info > h2:nth-child(4){
@@ -494,523 +658,1152 @@ footer{
     padding: 0 10% 10%;
     color:#6759a0;
 }
+/************ END-BOXES-INFO ************/
 
-/*************************************************/
-/*************** RESPONSIVE-410PX ****************/
-/*************************************************/
-
-@media (min-width:410px) {
-    .monsters-inc > img:nth-child(2){
-        padding-left: 45%;
-        margin-top: 7%;
-    }
-    
-    .monsters-inc > img:nth-child(3) {
-    width: 80%;
-    }
-    
-    .monsters-inc > img:nth-child(4) {
-        padding-right: 55%;
-    } 
-     
-    .information-ticket {
-        padding: 15% 10%;
-    }
-    
-    .characters h2{
-        margin: 15% 0 10%;
-    }
-    
-    .fifth-section {
-        background-size: auto 326px;
-    }
-    
-    .fifth-section ul {
-        padding: 0 17%;
-    }
-    
-    .fifth-section img {
-        width: 80%;
-    } 
-    
-/*************************************************/ 
-/*                   ABOUT                       */
-/*************************************************/
-  
-    .monsters-pages img {
-        width: 403px;
-        padding: 55px 0 40px;
-    }
-    
-    .monsters-pages h1 {
-        width: 321px;
-        padding: 60px;
-        margin: -130px auto 50px;
-    }
+/************ AWARDS ************/
+.awards{
+    text-align: center;
+    background:url("../img/flowers.png");
+    background-size: auto 242px;
+    padding: 15% 7% 20%;
 }
+
+.awards img{
+    width: 75%;
+    margin: 5%;
+}
+
+.awards h2{
+    text-align: center;
+    color: #e83e61;
+    text-shadow: 3px 4px #e8cfd5;
+    margin: 10% 0%;
+}
+
+.awards dl{
+    width: 198px;
+    margin: 0 auto;
+}
+
+.awards dd{
+    padding-bottom: 2em;
+}
+
+.awards > dl:nth-child(3) > dd{
+    color: #389b96;
+    padding-bottom: 0.3em;
+    line-height: 1.2;
+}
+
+.awards > dl:nth-child(3) > dt{
+    font-weight: 900;
+    color: #7b4997;
+    padding-top: 1em;
+}
+/************ END-AWARDS ************/
+
+/*************************************************/ 
+/*                 TICKETS                       */
+/*************************************************/
+
+/************ MONSTERS-TICKET-SLIDE ************/
+.ticket h1{
+    background:#fbefd9;
+    margin: -207px auto 50px;
+        padding: 79px 30px 30px 30px;
+}
+/************ END-MONSTERS-TICKET-SLIDE ************/
+
+
+/************ SHOWTIMES ************/
+.tickets-box{
+    background: #c1dae5;
+    padding:30px;
+}
+
+.tickets-box > h2:nth-child(1){
+    text-align: center;
+    color: #ea8bb1;
+    text-shadow: 3px 4px #6759a0;
+}
+
+.tickets-box > p:nth-child(2){
+    width: 248px;
+    margin: 0 auto;
+    padding: 30px 0 0;
+    color: #6759a0;
+    line-height: 1.1;
+}
+
+.green-box > img:nth-child(1), 
+.blue-box > img:nth-child(1), 
+.pink-box > img:nth-child(1){
+    width: 259px;
+    border-radius: 20px 20px 0px 0px;
+    display: block;
+    margin: 40px auto 0;
+}
+
+.tickets-box  h3 {
+    width: 259px;
+    padding: 42px 0;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+.green-box > h3:nth-child(2){
+    background: #82962f;
+}
+
+.blue-box > h3:nth-child(2){
+    background: #108c89;
+}
+
+.pink-box > h3:nth-child(2){
+    background: #bf6d98;
+}
+
+.tickets-box ul {
+    width: 259px;
+    border-radius: 0px 0px 20px 20px;
+    padding: 0 30px 30px;
+    margin: 0 auto;
+}
+
+.green-box > ul:nth-child(3){
+    background: #82962f;
+}
+
+.blue-box > ul:nth-child(3){
+    background: #108c89;
+}
+
+.pink-box > ul:nth-child(3){
+    background: #bf6d98;
+}
+
+.tickets-box li{
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 1.3em;
+}
+
+.green-box li{
+    background: #a9c83c;  
+}
+
+.blue-box li{
+    background: #22b3b4;
+}
+
+.pink-box li{
+    background: #efb1cf;
+}
+
+.all-the-boxes li a:link, 
+.all-the-boxes li a:visited {
+    color: white;
+    font-weight: 800;
+}
+
+.green-box li a:hover,
+.green-box li a:active,
+.green-box li a:focus{
+    color:#1a4006;
+}
+
+.blue-box li a:hover,
+.blue-box li a:active,
+.blue-box li a:focus{
+    color:#0b3261;
+}
+
+.pink-box li a:hover,
+.pink-box li a:active,
+.pink-box li a:focus{
+    color:#92074c;
+}
+/************ END-SHOWTIMES ************/
+
+/************ PRICES ************/
+.prices{
+    padding: 50px 40px;
+    background: #fbefd9;
+    border-top: 5px solid #82962f;
+    border-bottom: 5px solid #82962f;
+}
+
+.prices h2{
+    padding-bottom: 50px;
+    text-align: center;
+    color:#a9c83c;
+    text-shadow: 3px 4px #82962f;
+}
+
+.prices p{
+    text-align: center;
+    background: #82962f;
+    padding:0 10px;
+    line-height: 1.2;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.prices > p:nth-child(2){
+    border-radius:12px 12px 0 0;
+    padding-top: 20px;
+}
+
+.prices > p:nth-child(4){
+    border-radius: 0 0 12px 12px;
+    padding-bottom: 20px;
+}
+/************ END-PRICES ************/
+
+/************ GEO ************/
+.geo{
+    padding: 7% 12%;
+    background: #efdae6;
+}
+
+.geo h2{
+    padding-bottom: 50px;
+    text-align: center;
+    color:#22b3b4;
+    text-shadow: 3px 4px #108c89;
+}
+
+.geo > iframe:nth-child(2){
+    width: 100%;
+    border-radius: 32px;
+    height: 238px;
+    box-shadow: 8px 6px 12px #d37aa9;
+}
+
+.vcard{
+    padding: 20px 0;
+    line-height: 1.2;
+    text-align: center;
+    color:#84315d;
+}
+/************ END-GEO ************/
+
+/*************************************************/ 
+/*                 ERROR-PAGE                    */
+/*************************************************/
+
+.error-page{
+    width: 100%;
+    text-align: center;
+    padding: 108px 28px 50px;
+}
+
+.error-page h1{
+    padding-bottom: 30px;
+    color: #f9a630;
+    text-shadow: 3px 3px #ea7d2d;
+}
+
+.error-page img{
+    width: 100%;
+    border-radius: 32px 32px 0 0;
+    display: block;
+}
+
+.error-page p{
+    color: #0084cc;
+    line-height: 1.3;
+    font-weight: 900;
+}
+
+.text-error-page{
+    background-color: #e6edca;
+    border-radius: 0 0 32px 32px;
+    padding: 0 10px;
+}
+
+/************ TEXT-ERROR-PAGE ************/
+.text-error-page > h2:nth-child(1){
+    padding: 30px 0 20px;
+    color: #a9c83c;
+    text-shadow: 3px 4px #82962f;
+}
+
+.text-error-page ul {
+    overflow: auto;
+}
+
+.text-error-page ul li{
+    margin-top: 76px;
+}
+
+body > main > div > div > ul > li:nth-child(1){
+    margin-top:50px;
+}
+
+body > main > div > div > ul > li:nth-child(3){
+    margin-bottom:70px;
+}
+
+/************ BOTTON-ERROR-GO-BACK ************/
+.text-error-page > ul:nth-child(3) > li:nth-child(1) > a:nth-child(1),
+.text-error-page > ul:nth-child(3) > li:nth-child(2) > a:nth-child(1),
+.text-error-page > ul:nth-child(3) > li:nth-child(3) > a:nth-child(1){
+    border-radius: 12px;
+    padding: 30px 15px;
+    margin-top:30px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.text-error-page > ul:nth-child(3) > li:nth-child(1) > a:link,
+.text-error-page > ul:nth-child(3) > li:nth-child(1) > a:visited {
+    background-color:#f9a630;
+}
+
+.text-error-page > ul:nth-child(3) > li:nth-child(2) > a:link,
+.text-error-page > ul:nth-child(3) > li:nth-child(2) > a:visited {
+    background-color:#0084cc;
+}
+
+.text-error-page > ul:nth-child(3) > li:nth-child(3) > a:link,
+.text-error-page > ul:nth-child(3) > li:nth-child(3) > a:visited { 
+    background-color: #a9c83c;
+}
+
+.text-error-page > ul:nth-child(3) > li:nth-child(1) > a:hover,
+.text-error-page > ul:nth-child(3) > li:nth-child(2) > a:hover,
+.text-error-page > ul:nth-child(3) > li:nth-child(3) > a:hover,
+.text-error-page > ul:nth-child(3) > li:nth-child(1) > a:active,
+.text-error-page > ul:nth-child(3) > li:nth-child(2) > a:active,
+.text-error-page > ul:nth-child(3) > li:nth-child(3) > a:active,
+.text-error-page > ul:nth-child(3) > li:nth-child(1) > a:focus,
+.text-error-page > ul:nth-child(3) > li:nth-child(2) > a:focus,
+.text-error-page > ul:nth-child(3) > li:nth-child(3) > a:focus{
+    color:#494c43;
+}
+/************ END-BOTTON-ERROR-GO-BACK ************/
+/************ TEXT-ERROR-PAGE ************/
+
+    /*************************************************/
+    /*************** RESPONSIVE-410PX ****************/
+    /*************************************************/
+
+    @media (min-width:410px) {
+
+        /************ MONSTERS-INC-CENTRAL-SLIDE ************/
+        .monsters-inc > img:nth-child(2){
+            padding-left: 45%;
+        }
+        
+        .monsters-inc > img:nth-child(3) {
+            width: 80%;
+        }
+        
+        .monsters-inc > img:nth-child(4) {
+            padding-right: 55%;
+        }
+        /************ END-MONSTERS-INC-CENTRAL-SLIDE ************/ 
+
+        /************ INFO-TICKET-CIRCLES ************/ 
+        .information-ticket {
+            padding: 15% 10%;
+        }
+        /************ END-INFO-TICKET-CIRCLES ************/
+
+        /************ THROUGHT-THE-DOOR ************/  
+        .characters h2{
+            margin: 15% 0 10%;
+        }
+        /************ END-THROUGHT-THE-DOOR ************/
+        
+    /*************************************************/ 
+    /*                   ABOUT                       */
+    /*************************************************/
+      
+        .monsters-pages img {
+            width: 403px;
+            padding: 55px 0 40px;
+        }
+        
+        .monsters-pages h1 {
+            width: 321px;
+            padding: 60px;
+            margin: -130px auto 50px;
+        }
+
+        .awards {
+            background-size: auto 326px;
+        }
+        
+        .awards img {
+            width: 80%;
+        } 
+    }
 
 /*************************************************/
 /*************** RESPONSIVE-768PX ***************/
 /*************************************************/
 
-@media (min-width:768px) {
-    nav{
-        padding: 2% 0;
-        font-size: 1.4em;
-    }
-    
-    nav ul li {
-        padding: 3%;
-    }
-    
-    
-    .monsters-inc > img:nth-child(2) {
-        padding-left: 62%;
-        margin-top: 5%;
-    }
-    
-    .monsters-inc > img:nth-child(3) {
-        width: 49%;
-        margin-top: -8%;
-    }
-    
-    .monsters-inc > img:nth-child(4){
-        padding-right: 65%;
-        margin-top: -5%;
-    }
-    
-    .book-tickets {
-        padding: 13% 6%;
-    }
-    .book-tickets h2 {
-        width: 40%;
-        border-radius: 12px;
-        margin: 0 auto;
-        padding: 3%;
-        font-size: 2em;
-    }
-    
-    .information-ticket{
-        padding: 10% 5%;
-    }
-    
-    .circle-left{
-        margin:0;
-    }
-    
-    .circle {
-        width: 355px;
-        height: 355px;
-        padding: 95px 5px;
-    }
-    
-    .circle-right{
-        margin-left: 65%;
-    }
-    
-    .circle h3 + p {
-        font-size: 1.3em;
-    }
-    
-    .characters-on-the-door{
-        width: 100%;
-        padding: 5%;
-        overflow: auto;
-    }
-    
-    .characters-on-the-door h2 {
-        padding: 3%;
-        font-size: 2.28em;
-    }
-    
-    .characters-on-the-door > img:nth-child(1) {
-        width: 45%;
-        margin: 12% 5% 20% 0%;
-        float:left;
-    }
-      
-    .through-the-door{
-        width: 50%;
-        padding: 5%;
-        float: right;
-    }
-    
-    main:nth-child(2) > h2:nth-child(4) {
-        padding: 5%;
-        margin-left: 9%;
-    }
-    
-    .characters{
-        padding-bottom: 10%;
-    }
-    
-    .characters h2 {
-        margin: 0% 0 6%;
-    }
-    
-    .characters ul {
-        width: 470px;
-        margin: 0 auto;
-        padding: 0%;
-    }
-    
-    .characters li, .characters li:hover {
-        width: 130px;
-        margin: 30px 13px;
-        height: 130px;
-        padding: 2% 12%;
-        float: left;
-        box-shadow: 2px 5px 6px #3d3737;
-    }
+    @media (min-width:768px) {
 
-    .fifth-section {
-        background-size: contain;
-        padding: 5% 7% 10%;
-    }
-    
-    .fifth-section img {
-        width: 50%;
-        margin: 2% 0 4%;
-    }
-    
-    .fifth-section h2 {
-        margin: 0% 0% 5%;
-        font-size: 2.3em;
-    }
-    
-    .fifth-section ul {
-        padding: 0 27%;
-    }
-    
-    footer{
-        padding: 2%;
-    }
-    
-/*************************************************/ 
-/*                   ABOUT                       */
-/*************************************************/
-    .monsters-pages img {
-        width: 455px;
-        padding: 10% 0;
-        margin: 0 auto;
-    }
-    
-    .monsters-pages h1 {
-        width: 590px;
-        padding: 100px 30px;
-        margin: -413px auto 130px;
-    }
-    
-    .boxes-info{
-        width: 768px;
-        margin: 0 auto;
-        overflow: auto;
-        background: url("../img/flowers.png");
-        background-size: 833px;
-    }
-    
-    .boxes-info > h2:nth-child(1) {
-        width: 41%;
-        margin: 3% auto;
-        padding: 5%;
-    }
-    
-    .boxes-info > iframe:nth-child(2) {
-        width: 334px;
-        padding: 0;
-        margin-left: 65px;
-        float: left;
-    }
-    
-    .box-description {
-        width: 304px;
-        padding: 5%;
-        float: right;
-        margin: 50px 65px 0 0;
-    }
-    
-    .boxes-info > h2:nth-child(4) {
-        padding: 70px 35px;
-        color: #fff;
-        background: #6759a0;
-        width: 300px;
-        float: left;
-        margin: 50px 0 0px 65px;
-    }
-    
-    .boxes-info > p:nth-child(5) {
-        padding: 5%;
-        color: #fff;
-        background: #a5bb3f;
-        width: 260px;
-        float: left;
-        margin: 0 0 0 65px;
-    }
-    
-    .boxes-info > iframe:nth-child(6){
-        width: 378px;
-        margin: 50px 65px 0 0;
-        float: right;
-        padding: 50px 30px;
-        background: rgba(5, 95, 152,0.7);
-    }
-    
-    .boxes-info > iframe:nth-child(7){
-        width: 600px;
-        margin: 0 0 0 65px;
-        float: left;
-        padding: 50px 30px;
-        background: #ea8bb1;
-    }
-    
-    .bold{
-        display:inline; /* to avoid using br on html */
-    /*set display:inline to return back */
-    }
-}
+        /************ NAVIGATION ************/ 
+        nav{
+            padding: 1% 0;
+            font-size: 1.5em;
+        }
 
-/*************************************************/
-/*************** RESPONSIVE-968PX ***************/
-/*************************************************/
+        nav:nth-child(1) > a:nth-child(1) > img:nth-child(1){
+            width: 126px;
+        }
 
-@media (min-width:968px) {
-    .monsters-inc > img:nth-child(2) {
-        padding-left: 73%;
-    }
-    
-    .monsters-inc > img:nth-child(3) {
-        width: 45%;
-    }
-    
-    .monsters-inc > img:nth-child(4) {
-        padding-right: 73%;
-    }
-    
-    .book-tickets {
-        padding: 10% 8%;
-    }
-    
-    .book-tickets h2 {
-        width: 28%;
-        padding: 2%;
-    }
-    
-    .information-ticket {
-        padding: 5%;
-        overflow: auto;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .information-ticket h2 {
-        width: 50%;
-    }
-    
-    .circle-left {
-        width: 240px;
-        height: 240px;
-        margin: 70px 20px 0;
-        padding: 63px 28px;
-    }
-    
-    .circle{
-        margin: 0;
-        padding: 105px 40px;
-    }
-    
-    .circle-right{
-        margin: 70px 20px 0;
-        padding: 63px 28px;
-    }
-    .circle h2 + p {
-        font-size: 1.3em;
-        line-height: 1.1;
-    }
-    
-    .characters-on-the-door > img:nth-child(1) {
-        width: 45%;
-        margin: 12% 5% 10% 0%;
-    }
-    
-    .characters-on-the-door h2 {
-        margin-left: 9.5%;
-        font-size: 3em;
-    }
-    
-    .through-the-door {
-        width: 50%;
-        padding: 3%;
-    }
-    
-    .characters {
-        padding: 5% 15%;
-    }
-    
-    .characters ul {
-        width: 558px;
-    }
-    
-    .characters li, .characters li:hover {
-        width: 150px;
-        height: 150px;
-        margin: 30px 18px;
-    }
-    
-    .fifth-section img {
-        margin: 0% 0 4%;
-    }
-    
-/*************************************************/ 
-/*                   ABOUT                       */
-/*************************************************/
-    
-    .boxes-info {
-        width: 868px;
-    }
-    
-    .boxes-info > iframe:nth-child(2) {
-        width: 400px;
-    }
-    
-    .box-description {
-        width: 338px;
-        padding: 5% 3%;
-    }
-    
-    .boxes-info > h2:nth-child(4) {
-        padding: 50px 35px;
-        width: 350px;
-    }
-    
-    .boxes-info > p:nth-child(5) {
-        padding: 5% 3%;
-        color: #fff;
-        background: #a5bb3f;
-        width: 305px;
-    }
-    
-    .boxes-info > iframe:nth-child(6) {
-        width: 433px;
-    }
-    
-    .boxes-info > iframe:nth-child(7) {
-        width: 400px;
-        margin: 0 0 0 232px;
-    }
-}
+        nav ul {
+            margin: 24px 5px;
+            width: 180px;
+        }
+        /************ END-NAVIGATION ************/
 
-/*************************************************/
-/*************** RESPONSIVE-1090PX ***************/
-/*************************************************/
-
-@media (min-width:1090px) {
- 
-    nav ul li {
-        padding: 2%;
-    }
-    
-    .monsters-inc > img:nth-child(2) {
-        padding-left: 72%;
-        padding-right: 3%;
-    }
-    
-    .monsters-inc > img:nth-child(3) {
-        width: 39%;
-        margin-top: -9%;
-    }
-    
-    .monsters-inc > img:nth-child(4) {
-        padding-right: 75%;
-        margin-top:-8%;
-    }
-    
-    .through-the-door {
-        width: 45%;
-    }
-    
-    .characters-on-the-door > h2:nth-child(2) {
-        font-size: 2.9em;
-        padding: 0 0 1%;
-    }
+        /************ MONSTERS-INC-CENTRAL-SLIDE ************/
+        .monsters-inc > img:nth-child(2) {
+            padding-left: 62%;
+        }
         
-    .characters {
-        padding: 5% 19%;
-    }
-    
-    .characters ul {
-        width: 580px;
-    }
-    
-    .characters li, .characters li:hover {
-        margin: 30px 21px;
-    }
-    
-    .fifth-section img {
-        width: 40%;
-    }
-    
-    .fifth-section ul {
-        padding: 0 32%;
-    }
-    
-/*************************************************/ 
-/*                   ABOUT                       */
-/*************************************************/
-    .monsters-pages h1 {
-        width: 800px;
-        padding: 132px 30px;
-        margin: -463px auto 130px;
-        font-size: 3.3em;
-    }
-    
-    .monsters-pages img {
-        padding: 7% 0;
-    }
-    
-    .boxes-info {
-        width: 950px;
-    }
-    
-    .box-description {
-        width: 420px;
-    }
-    
-    .boxes-info > h2:nth-child(4) {
-        padding: 43px 35px;
-    }
-    
-    .boxes-info > iframe:nth-child(6) {
-        width: 515px;
-    }
-    
-    .boxes-info > iframe:nth-child(7) {
-        width: 500px;
-        margin: 0 0 0 223px;
-    }
-}
+        .monsters-inc > img:nth-child(3) {
+            width: 49%;
+            margin-top: -8%;
+        }
+        
+        .monsters-inc > img:nth-child(4){
+            padding-right: 65%;
+            margin-top: -5%;
+        }
+        /************ END-MONSTERS-INC-CENTRAL-SLIDE ************/
 
-/*************************************************/
-/*************** RESPONSIVE-1200PX ***************/
-/*************************************************/
+        /************ BOOK-TICKETS ************/
+        .book-tickets {
+            padding: 13% 6%;
+        }
 
-@media (min-width:1200px) {
+        .book-tickets p {
+            width: 40%;
+            border-radius: 12px;
+            margin: 0 auto;
+            padding: 3%;
+            font-size: 2em;
+        }
+        /************ END-BOOK-TICKETS ************/
 
-    .monsters-inc > img:nth-child(2) {
-        margin-top: 2%;
-    }
-    
-    .monsters-inc > img:nth-child(3) {
-        width: 35%;
-        margin-top: -6%;
-    }
-    
-    .monsters-inc > img:nth-child(4) {
-        padding-right: 79%;
-    }
-    
-    .characters-on-the-door > img:nth-child(1) {
-        margin: 3% 5% 0% 0%;
-    }
-    
+        /************ INFO-TICKETS ************/
+        .information-ticket{
+            padding: 10% 5%;
+        }
+        
+        .circle-left{
+            margin:0;
+        }
+        
+        .circle {
+            width: 355px;
+            height: 355px;
+            padding: 84px 5px;
+        }
+        
+        .circle-right{
+            margin-left: 65%;
+            padding: 72px 19px;
+        }
 
-}
+        .circle-left h3, 
+        .circle-right h3{
+            font-size: 1.7em;
+        }
+
+        .circle h3{
+                font-size:2.3em;
+        }
+        
+        .circle h3 + p {
+            font-size: 1.3em;
+        }
+
+        .characters-on-the-door{
+            width: 100%;
+            padding: 5%;
+            overflow: auto;
+        }
+        
+        .characters-on-the-door h2 {
+            padding: 3%;
+            font-size: 2.28em;
+        }
+        
+        .characters-on-the-door > img:nth-child(1) {
+            width: 45%;
+            margin: 16% 5% 20% 0%;
+            float:left;
+        }
+          
+        .through-the-door{
+            width: 50%;
+            padding: 5%;
+            float: right;
+        }
+        
+        main:nth-child(2) > h2:nth-child(4) {
+            padding: 5%;
+            margin-left: 9%;
+        }
+
+        /************ END-INFO-TICKETS ************/
+
+        /************ CHARACTERS-ON-THE-DOOR ************/
+        
+        .characters{
+            padding-bottom: 10%;
+        }
+        
+        .characters h2 {
+            margin: 0% 0 6%;
+        }
+        
+        .characters ul {
+            width: 497px;
+            margin: 0 auto;
+            padding: 0%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .characters li, 
+        .characters li:hover {
+            width: 130px;
+            margin: 30px 13px;
+            height: 130px;
+            padding: 2% 12%;
+            box-shadow: 2px 5px 6px #3d3737;
+        }
+        /************ END-CHARACTERS-ON-THE-DOOR ************/
+
+        /************ CREDITS-DOORS-WITH-MONSTERS ************/
+        .all-doors{
+            overflow: auto;
+            /*display: flex;
+            justify-content: center;
+            flex-wrap: wrap;*/
+            width: 640px;
+            margin: 0 auto;
+        }
+
+        .doors{
+            float: left;
+        }
+        /************ CREDITS-DOORS-WITH-MONSTERS ************/
+
+        /************ FOOTER ************/
+        footer{
+            padding: 2%;
+        }
+        /************ END-FOOTER ************/
+        
+        /*************************************************/ 
+        /*                   ABOUT                       */
+        /*************************************************/
+
+        /************ AMAZING-MONSTERS-SLIDE ************/
+        .monsters-pages img {
+            width: 455px;
+            padding: 10% 0;
+            margin: 0 auto;
+        }
+        
+        .monsters-pages h1 {
+            width: 590px;
+            padding: 100px 30px;
+            margin: -413px auto 130px;
+        }
+        /************ END-AMAZING-MONSTERS-SLIDE ************/
+        
+        /************ BOXES-INFO ************/
+        .boxes-info{
+            width: 768px;
+            margin: 0 auto;
+            overflow: auto;
+            background: url("../img/flowers.png");
+            background-size: 833px;
+        }
+        
+        .boxes-info > h2:nth-child(1) {
+            width: 41%;
+            margin: 3% auto;
+            padding: 5%;
+        }
+        
+        /************ TRAILER ************/
+        .boxes-info > iframe:nth-child(2) {
+            width: 334px;
+            padding: 0;
+            margin-left: 65px;
+            float: left;
+        }
+        /************ END-TRAILER ************/
+        
+        .box-description {
+            width: 304px;
+            padding: 5%;
+            float: right;
+            margin: 50px 65px 0 0;
+        }
+        
+        .boxes-info > h2:nth-child(4) {
+            padding: 70px 35px;
+            color: #fff;
+            background: #6759a0;
+            width: 300px;
+            float: left;
+            margin: 50px 0 0px 65px;
+        }
+        
+        .boxes-info > p:nth-child(5) {
+            padding: 5%;
+            color: #fff;
+            background: #a5bb3f;
+            width: 260px;
+            float: left;
+            margin: 0 0 0 65px;
+        }
+        
+        /************ YOUTUBE-VIDEO ************/
+        .boxes-info > iframe:nth-child(6){
+            width: 378px;
+            margin: 50px 65px 0 0;
+            float: right;
+            padding: 50px 30px;
+            background: rgba(5, 95, 152,0.7);
+        }
+        
+        .boxes-info > iframe:nth-child(7){
+            width: 600px;
+            margin: 0 0 0 65px;
+            float: left;
+            padding: 50px 30px;
+            background: #ea8bb1;
+        }
+        /************ END-YOUTUBE-VIDEO ************/
+        /************ END-BOXES-INFO ************/
+
+        /************ AWARD ************/
+        .awards {
+            background-size: contain;
+            padding: 5% 7% 10%;
+        }
+        
+        .awards img {
+            width: 50%;
+            margin: 2% 0 4%;
+        }
+        
+        .awards h2 {
+            margin: 0% 0% 2%;
+        }
+
+        .awards dl{
+            width: 700px;
+            padding: 0 100px;
+            -webkit-column-count: 3; /* Chrome, Safari, Opera */
+            -moz-column-count: 3; /* Firefox */
+            column-count: 3;
+            -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+            -moz-column-gap: 40px; /* Firefox */
+            text-align: left;
+        }
+
+        /************ END-AWARD ************/
+
+        /*************************************************/ 
+        /*                  TICKETS                      */
+        /*************************************************/
+
+        /************ SHOTIMES ************/
+        .tickets-box{
+            overflow: auto;
+        }
+
+        .tickets-box > p:nth-child(2){
+            width: 665px;
+        }
+
+        .all-the-boxes{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .green-box, 
+        .blue-box, 
+        .pink-box{
+            margin: 0 10px;
+        }
+
+        .green-box h3, 
+        .blue-box h3, 
+        .pink-box h3, 
+        .green-box > img:nth-child(1), 
+        .blue-box > img:nth-child(1), 
+        .pink-box > img:nth-child(1),
+        .green-box ul, 
+        .blue-box ul, 
+        .pink-box ul{
+            width: 220px;
+        }
+        /************ END-SHOTIMES ************/
+
+        /************ PRICES ************/
+        .prices{
+            padding: 6% 29%;
+        }
+        /************ END-PRICES ************/
+
+        /************ GEO ************/
+        .geo {
+            padding: 7% 22%;
+        }
+        /************ END-GEO ************/
+
+        /*************************************************/ 
+        /*                    ERROR                      */
+        /*************************************************/
+        .error-page{
+            padding: 125px 110px 50px;
+        }
+
+        .error-page h1{
+            font-size:3.3em;
+        }
+
+        .error-page ul{
+            padding: 47px;
+        }
+
+        .error-page ul li{
+            display: inline;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+
+    }
+
+    /*************************************************/
+    /*************** RESPONSIVE-968PX ***************/
+    /*************************************************/
+
+    @media (min-width:968px) {
+
+        /************ MONSTERS-INC-CENTRAL-SLIDE ************/
+        .monsters-inc > img:nth-child(2) {
+            padding-left: 73%;
+        }
+        
+        .monsters-inc > img:nth-child(3) {
+            width: 45%;
+        }
+        
+        .monsters-inc > img:nth-child(4) {
+            padding-right: 73%;
+        }
+        /************ END-MONSTERS-INC-CENTRAL-SLIDE ************/
+
+        /************ BOOK-TICKET ************/
+        .book-tickets {
+            padding:8%;
+        }
+        
+        .book-tickets p {
+            width: 28%;
+            padding: 2%;
+        }
+        /************ END-BOOK-TICKET ************/
+        
+        /************ INFO-TICKET-CIRCLES ************/
+        .information-ticket {
+            padding: 5%;
+            overflow: auto;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .information-ticket h2 {
+            width: 50%;
+        }
+        
+        .circle-left {
+            width: 240px;
+            height: 240px;
+            margin: 70px 20px 0;
+            padding: 63px 28px;
+        }
+        
+        .circle{
+            margin: 0;
+            padding: 83px 40px;
+        }
+        
+        .circle-right{
+            margin: 70px 20px 0;
+            padding: 63px 28px;
+        }
+        .circle h2 + p {
+            font-size: 1.3em;
+            line-height: 1.1;
+        }
+        /************ END-INFO-TICKET-CIRCLES ************/
+        
+        /************ CHARACTERS-ON-THE-DOOR ************/
+        .characters-on-the-door > img:nth-child(1) {
+            width: 45%;
+            margin: 12% 5% 10% 0%;
+        }
+        
+        .characters-on-the-door > h2:nth-child(2) {
+            margin-left: 9.5%;
+            font-size: 2.8em;
+            margin-bottom: 15px;
+        }
+        
+        .through-the-door {
+            width: 50%;
+            padding: 3%;
+        }
+        /************ END-CHARACTERS-ON-THE-DOOR ************/
+        
+        /************ CHARACTERS ************/
+        .characters {
+            padding: 5% 15%;
+        }
+        
+        .characters ul {
+            width: 558px;
+        }
+        
+        .characters li, 
+        .characters li:hover {
+            width: 150px;
+            height: 150px;
+            margin: 30px 18px;
+        }
+        /************ END-CHARACTERS ************/
+
+        /************ CREDITS-DOORS ************/
+        .inside-the-door{
+            padding: 5% 0;
+        }
+
+        .all-doors{
+            width: 840px;
+        }
+
+        .orange-door{
+            margin: 0 31px 0 -8px;
+        }
+
+        .green-door{
+            margin: 0px 18px 0px -14px;
+        }
+
+        .beje-door{
+            margin: 0px 0 0 -175px;
+        }
+
+        .blue-door{
+            margin: 0 0 0 64px;
+        }
+
+        .violet-door{
+            margin: 0px 1px 34px -175px;
+        }
+
+        .pink-door{
+            margin: 0px 0px 0px -60px;
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+        }
+
+        .pink-door p {
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+        }
+        /************ END-CREDITS-DOORS ************/
+        
+        /*************************************************/ 
+        /*                   ABOUT                       */
+        /*************************************************/
+        
+        /************ BOXES-INFO ************/
+        .boxes-info {
+            width: 868px;
+        }
+        
+        .boxes-info > iframe:nth-child(2) {
+            width: 400px;
+        }
+        
+        .box-description {
+            width: 338px;
+            padding: 5% 3%;
+        }
+        
+        .boxes-info > h2:nth-child(4) {
+            padding: 50px 35px;
+            width: 350px;
+        }
+        
+        .boxes-info > p:nth-child(5) {
+            padding: 5% 3%;
+            color: #fff;
+            background: #a5bb3f;
+            width: 305px;
+        }
+        
+        .boxes-info > iframe:nth-child(6) {
+            width: 433px;
+        }
+        
+        .boxes-info > iframe:nth-child(7) {
+            width: 400px;
+            margin: 0 0 0 232px;
+        }
+        /************ END-BOXES-INFO ************/
+
+        /************ AWARDS ************/
+        .awards img {
+            margin: 0% 0 4%;
+        }
+
+        .awards dl{
+            background: url("../img/flowers.png");
+            background-size: 680px;
+        }
+        /************ END-AWARDS ************/
+
+        /*************************************************/ 
+        /*                  TICKETS                      */
+        /*************************************************/
+
+        .tickets-box {
+            padding: 50px;
+        }
+
+        .tickets-box > p:nth-child(2) {
+            width: 737px;
+        }
+
+        .green-box, 
+        .blue-box, 
+        .pink-box {
+            margin: 0 25px;
+        }
+
+        /*************************************************/ 
+        /*                    ERROR                      */
+        /*************************************************/
+        .error-page{
+            padding: 125px 220px 50px;
+        }
+
+    }
+
+    /*************************************************/
+    /*************** RESPONSIVE-1090PX ***************/
+    /*************************************************/
+
+    @media (min-width:1090px) {
+
+        /************ MONSTERS-INC-CENTRAL-SLIDE ************/
+        .monsters-inc > img:nth-child(2) {
+            padding-left: 72%;
+            padding-right: 3%;
+        }
+        
+        .monsters-inc > img:nth-child(3) {
+            width: 39%;
+            margin-top: -9%;
+        }
+        
+        .monsters-inc > img:nth-child(4) {
+            padding-right: 75%;
+            margin-top:-8%;
+        }
+        /************ END-MONSTERS-INC-CENTRAL-SLIDE ************/
+
+        /************ CHARACTERS-ON-THE-DOOR ************/
+        .through-the-door {
+            width: 45%;
+        }
+        
+        .characters-on-the-door > h2:nth-child(2) {
+            font-size: 2.9em;
+            padding: 0 0 1%;
+        }
+
+        .characters-on-the-door > img:nth-child(1) {
+            width: 50%;
+            margin: 7% 2% 10% 0%;
+        }
+
+        /************ END-CHARACTERS-ON-THE-DOOR ************/   
+
+        /************ CHARACTERS ************/
+        .characters {
+            padding: 5%;
+        }
+        
+        .characters ul {
+            width: 619px;
+            height: 450px;
+        }
+        
+        .characters li, 
+        .characters li:hover {
+            margin: 30px 21px;
+        }
+        /************ END-CHARACTERS ************/
+
+        /************ CREDITS-DOORS ************/
+        .all-doors {
+            width: 884px;
+        }
+
+        .doors {
+            width: 325px;
+            height: 320px;
+        }
+
+        .doors p{
+            width: 32%;
+        }
+
+        .orange-door p {
+            margin: 81px 46px 0px 151px;
+        }
+
+        .green-door p {
+            margin: 92px 163px 0px 151px;
+        }
+
+        .beje-door p {
+            margin: 76px 39px 0px 151px;
+        }
+
+        .blue-door p {
+            margin: 97px 161px 0px 151px;
+        }
+        
+        .violet-door p {
+            margin: 59px 45px 0px 151px;
+        }
+
+        .pink-door p {
+            margin: 89px 172px 0px 151px;
+        }
+        /************ END-CREDITS-DOORS ************/
+
+    /*************************************************/ 
+    /*                   ABOUT                       */
+    /*************************************************/
+
+        /************ AMAZING-MONSTERS-SLIDE ************/
+        .monsters-pages h1 {
+            width: 800px;
+            padding: 132px 30px;
+            margin: -463px auto 130px;
+            font-size: 3.3em;
+        }
+        
+        .monsters-pages img {
+            padding: 7% 0;
+        }
+        /************ END-AMAZING-MONSTERS-SLIDE ************/
+
+        /************ BOXES-INFO ************/
+        .boxes-info {
+            width: 950px;
+        }
+        
+        .box-description {
+            width: 420px;
+        }
+        
+        .boxes-info > h2:nth-child(4) {
+            padding: 43px 35px;
+        }
+        
+        .boxes-info > iframe:nth-child(6) {
+            width: 515px;
+        }
+        
+        .boxes-info > iframe:nth-child(7) {
+            width: 500px;
+            margin: 0 0 0 223px;
+        }
+        /************ END-BOXES-INFO ************/
+
+        /************ AWARDS ************/
+        .awards img {
+            width: 40%;
+        }
+
+        .awards dl {
+            padding: 0 120px;
+            background-size: 736px;
+        }
+
+        /************ END-AWARDS ************/
+
+        /*************************************************/ 
+        /*                  TICKETS                      */
+        /*************************************************/
+
+        .prices {
+        padding: 4% 29%;
+        }
+
+        .geo {
+            padding: 4% 22%;
+        }
+
+        /*************************************************/ 
+        /*                    ERROR                      */
+        /*************************************************/
+        .error-page{
+            padding: 125px 305px 50px;
+        }
+
+    }
+
+    /*************************************************/
+    /*************** RESPONSIVE-1200PX ***************/
+    /*************************************************/
+
+    @media (min-width:1200px) {
+    
+        .monsters-inc > img:nth-child(3) {
+            width: 35%;
+            margin-top: -6%;
+        }
+        
+        .monsters-inc > img:nth-child(4) {
+            padding-right: 79%;
+        } 
+
+    }

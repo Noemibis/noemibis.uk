@@ -5,17 +5,16 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115542436-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-115542436-1');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-115542436-1');
     </script>
     <!-- End-Google-Analytics-->
     
     <meta charset="utf-8"/>
-    <meta name="description" content="Come to our healthy food store in Basingstoke or contact us to know more about our healthy diet food.">
     <title>Contact our healthy food store in Basingstoke | Clark's Healthy Food</title>
+    <meta name="description" content="Come to our healthy food store in Basingstoke or contact us to know more about our healthy diet food.">
     
     <!-- RESPONSIVE -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
@@ -32,11 +31,11 @@
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <link rel="manifest" href="/icons/site.webmanifest">
-    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#9dd55b">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#9dd55b">
     <meta name="msapplication-TileColor" content="#428a42">
     <meta name="theme-color" content="#ffffff">
     <!-- END-FAVICON -->
@@ -50,11 +49,11 @@
     <main role="main">
         <!-- SHOP -->        
         <h1>Contacts</h1>
-        <img src="img/shop.png" alt="shopofmrclarks" class="shop">
+        <img src="img/shop.png" alt="Picture of the shop of Mr clarks" class="shop">
         <div class="general-pages-style">
         <!--class="general-pages-style" is applied in "about-us", "offers" and "contacts" pages-->
             <h2>Shop</h2>
-            <p>Our shop opened in 1973 when Mr Clark&rsquo;s decided to build a <strong>healthy food store in Basingstoke</strong>, with the best quality of products, that could help to resolve every type of problems just with natural chooses and a correct diet. Basically, Mr Clar&rsquo;s is a biologist with a big dream, replace drugs with healthy food. Today, he finally done it, in his <strong>healthy food store in Basingstoke</strong>. The shop is based in  a small city in south England, 16 London Rd, Basingstoke RG21, The United Kingdom. Mr. Clark&rsquo;s it&rsquo;s not an e&ndash;commerce so you can discover more and buy interesting things directly into the store. Come to know more about healthy life.</p>
+            <p>Our <bold>shop</bold> opened in <i>1973</i> when <em>Mr Clark&rsquo;s</em> decided to build a <strong>healthy food store in <em>Basingstoke</em></strong>, with the best quality products, that could help to resolve every type of problem using <i>natural produce</i> and a <i>correct diet</i>.<em>Mr Clar&rsquo;s</em> is a trained biologist with a big dream to replace drugs with <bold>healthy food</bold>. Today, he has finally done it, in his <strong>healthy food store in Basingstoke</strong>. The shop is based in  a small city in south England, 16 London Rd, <em>Basingstoke</em> RG21. <em>Clark&rsquo;s</em> is not an e&ndash;commerce site so you can discover more and buy interesting things <bold>directly inside the store</bold>. Come and know more about living a healthy life.</p>
         </div> 
         <!-- END-SHOP --> 
         
@@ -74,7 +73,7 @@
             
             <!-- OPENING-HOURS -->             
             <div class="opening-hours">
-                <img src="img/clock.png" alt="watch-icon">
+                <img src="img/clock.png" alt="watch icon">
                 <h3>Opening Hours</h3>
                 <p id="greeting">welcome</p>
                 <table>
@@ -116,12 +115,12 @@
             
             <!-- ADDRESS --> 
             <div class="position group">
-                <img src="img/position.png" alt="position-icon">
-                <p class="geo">
-                16 London Rd, Basingstoke RG21 <br>
-                The United Kingdom
-                </p>  
-            </div>
+                <img src="img/position.png" alt="position icon">
+                <p class="street-address">16 London Rd</p> 
+                <p class="locality">Basingstoke</p> 
+                <p class="postal-code">RG21</p>
+                <p class="country-name">The United Kingdom</p>
+                </div>
             <!-- END-ADDRESS --> 
             
         </div>

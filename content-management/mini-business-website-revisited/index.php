@@ -5,17 +5,16 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115542436-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-115542436-1');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-115542436-1');
     </script>
     <!-- End-Google-Analytics-->
 
     <meta charset="utf-8"/>
-    <meta name="description" content="Clark's is the best healthy food store in Basingstoke. It sells vitamins, organic food, food allergies and healthy products. Everything is selected for the best work-out and correct nutrition.">
     <title>The best healthy food store in Basingstoke | Clark's Healthy Food</title>
+    <meta name="description" content="Clark's is the best healthy food store in Basingstoke. It sells vitamins, organic food, food allergies and healthy products. Everything is selected for the best work-out and correct nutrition.">
     
     <!-- RESPONSIVE -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
@@ -32,11 +31,11 @@
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <link rel="manifest" href="/icons/site.webmanifest">
-    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#9dd55b">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#9dd55b">
     <meta name="msapplication-TileColor" content="#428a42">
     <meta name="theme-color" content="#ffffff">
     <!-- END-FAVICON -->
@@ -51,10 +50,10 @@
         <!-- SLIDER --> 
          <div class="slider"> 
              <h1>Clark's Healthy Food</h1>
-             <img src="img/box.png" alt="box" class="box">
+             <img src="img/box.png" alt="box of healthy crackers by Clark's" class="box">
              <div class="writing">
                  <p>Get inspired<p>
-                 <p>from our <strong>healthy food store<br> in Basingstoke</strong></p>
+                 <p>from our <strong>healthy food store<br> in <em>Basingstoke</em></strong></p>
              </div> 
          </div> 
         <!-- END-SLIDER --> 
@@ -80,24 +79,24 @@
         <!-- HEALTHY-CHOOSE --> 
         <div class="choose-healthy">
             <h2>Choose healthy</h2>
-            <p>We are a <strong>healthy food store in Basingstoke</strong>.</p>
+            <p>We are a <strong>healthy food store in <em>Basingstoke</em></strong>.</p>
 
-            <p>We are not an e-commerce store so come to us to try our delicious and healthy food.</p>
+            <p>We are <bold>not an e-commerce</bold> store so <bold>come to us</bold> to try our delicious and <bold>healthy food</bold>.</p>
 
             <p>We specialise in selling vitamins, solutions for your allergies, body creme, organic food and much more.
-            Learn online, discover more and buy on our <strong>healthy food store in Basingstoke</strong>.</p>
+            Learn online, discover more and buy on our <strong>healthy food store in <em>Basingstoke</em></strong>.</p>
 
-            <p> All our healthy foods have been specially selected to help you with your diet, improved alimentation and work out, and most importantly your happiness. You will be comfortable with us because you’ll have healthy products at value prices. Come to our <strong>healthy food store in Basingstoke</strong> to discover all our fantastic promotions.
+            <p> All our <bold>healthy foods</bold> have been specially selected to help you with your diet, improved alimentation and work out, and most importantly <bold>your happiness</bold>. You will be comfortable with us because you’ll have <bold>healthy products</bold> at value prices. Come to our <strong>healthy food store in <em>Basingstoke</em></strong> to discover all our fantastic promotions.
             </p>
         </div>
         
         <div class="the-best-diet">
             <h2>The Best diet</h2>
-            <p>We all know the ideal healthy lifestyle will have a balanced nutrition based on natural ingredients, healthy foods and a good daily work out.</p>
+            <p>We all know the ideal healthy lifestyle will have a balanced nutrition based on natural ingredients, <bold>healthy foods</bold> and a good daily <strong>work out</strong>.</p>
             
-            <p>A correct diet requires all the necessary ingredients vital for effective growth and this will help supplement lacking nutrients in the body. Start your day without skipping any meal, it's important to eat 5 times for the day.</p> 
+            <p>A <bold>correct diet</bold> requires all the necessary ingredients vital for effective growth and this will help supplement <bold>lacking nutrients</bold> in the body. Start your day without skipping any meal, <bold>it's important to eat 5 times for the day</bold>.</p> 
             
-            <p>Don't waste your time, come to our <strong>healthy food store in Basingstoke</strong> and speak with our experts, they'll suggest you the perfect healthy products for your lifestyle.</p>
+            <p>Don't waste your time, come to our <strong>healthy food store in <em>Basingstoke</em></strong> and speak with our experts, they'll suggest you the perfect <bold>healthy products</bold> for your lifestyle.</p>
         </div>
         <!-- END-HEALTHY-CHOOSE --> 
     

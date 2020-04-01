@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /error/
+Disallow: /includes/
+
+Sitemap: https://noemibis.uk/applied-art/film-promotion/sitemap.xml

@@ -2,7 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>Clark's Healthy Food</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115542436-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-115542436-1');
+    </script>
+    <!-- End-Google-Analytics-->
+    
+    <title>404 Error Page | Clark's Healthy Food</title>
     
     <!-- RESPONSIVE -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
@@ -18,12 +29,12 @@
     <!-- STYLE -->
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="/content-management/mini-business-website-revisited/icons/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/content-management/mini-business-website-revisited/icons/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/content-management/mini-business-website-revisited/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/content-management/mini-business-website-revisited/icons/favicon-16x16.png">
-    <link rel="manifest" href="/content-management/mini-business-website-revisited/icons/site.webmanifest">
-    <link rel="mask-icon" href="/content-management/mini-business-website-revisited/icons/safari-pinned-tab.svg" color="#9dd55b">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#9dd55b">
     <meta name="msapplication-TileColor" content="#428a42">
     <meta name="theme-color" content="#ffffff">
     <!-- END-FAVICON -->

@@ -7,9 +7,10 @@
             <p class="fn">Clark&rsquo;s Healthy Food</p>
             <p class="tel">0123 4567891230</p>
             <p class="email">clarks[&#64;]gmail.com</p>
-            <p class="geo">16 London Rd, Basingstoke</p> 
-            <p class="geo">RG21</p>
-            <p class="geo">The United Kingdom</p>
+            <p class="street-address">16 London Rd</p> 
+            <p class="locality">Basingstoke</p> 
+            <p class="postal-code">RG21</p>
+            <p class="country-name">The United Kingdom</p>
         </div>
         <!-- END-CONTACTS -->
         

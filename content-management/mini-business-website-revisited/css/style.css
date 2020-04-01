@@ -94,9 +94,13 @@ p {
     line-height: 1.1;
 }
 
-strong{
+strong, bold{
     font-weight: 900;
-    color: #dd890e;
+    color: #9b5d0b;
+}
+
+em, i{
+    font-style: italic;
 }
 
 /*******HEADER*******/
@@ -233,6 +237,7 @@ header p{
 }
 
 /** ANIMATIONS-CATEGORIES **/
+
 .icons li a#hire:link, .icons li a#hire:visited {
 	display: block;
 	margin: 0 auto 20px;
@@ -506,6 +511,13 @@ footer:nth-child(3) > p:nth-child(3){
     margin: -30% 0 0 25%;
 }
 
+.beige strong, .beige bold,
+.special-friday > p:nth-child(3) strong,
+.special-friday > p:nth-child(3) bold {
+    color: #dd890e;
+    font-weight: 900;
+}
+
 .beige p, .green p{
     margin-top: -25%;
     padding: 40% 7% 10% 7%;
@@ -638,7 +650,7 @@ footer:nth-child(3) > p:nth-child(3){
 
 .position{
     width: 100%;
-    padding: 18% 5% 0%; 
+    padding: 18% 17% 5%;
     overflow: auto;
     margin: 0 4%;
 }
@@ -654,10 +666,10 @@ footer:nth-child(3) > p:nth-child(3){
 }
 
 .position > img:nth-child(1){
-    width: 25%;
+    width: 55px;
     float:left;
     margin-right: 5%;
-    margin-top: -9%;
+    margin-top: 0%;
 }
 
 .opening-hours{
@@ -1276,17 +1288,18 @@ footer:nth-child(3) > p:nth-child(3){
         width: 25%;
         float: none;
         padding: 5.5% 0% 1% 3%;
+        text-align: center;
+    }
+    
+    .position > img:nth-child(1) {
+        width: 34px;
+        float: none;
     }
     
     .position p{
         font-size: 1em;
     }
     
-    .position > img:nth-child(1) {
-        width: 30%;
-        float: none;
-        margin: 0% 0% 8% 20%;
-    }
 
     /*******END-CONTACTS*******/
     
@@ -1599,6 +1612,11 @@ footer:nth-child(3) > p:nth-child(3){
             height: 290px;
         }
 
+        .position{
+            width: 32%;
+            text-align: left;
+        }
+    
         .position p {
             font-size: 1em;
             float: right;
@@ -1606,7 +1624,7 @@ footer:nth-child(3) > p:nth-child(3){
         }
 
         .position > img:nth-child(1) {
-            width: 23%;
+            width: 48px;
             float: left;
             margin: 0% 0% 5% 0%;
         }

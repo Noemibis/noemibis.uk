@@ -124,16 +124,35 @@ main{
 
 .slider{
     width: 100%;
-    background: url("../img/greenwich.jpg") no-repeat;
-    padding: 20% 0;
+    background: url("../img/noemibis.uk.jpg") no-repeat;
+    padding: 10% 0;
+    background-size: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 h1 {
-    font-family: 'Russo One', sans-serif; ;
+    width: 611px;
+    margin: 0 auto;
+    font-family: 'Russo One', sans-serif;
     font-size: 2em;
-    text-align: center;
-    color:#090605;
+    color: #ffffff;
     background: rgba(68,176,157,0.8);
+    padding: 60px 20px;
+}
+
+button{
+    text-align: center;
+    background: rgba(68,176,157,0.8);
+    padding: 10px 20px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 1em;
+    margin: 20px;
+}
+
+button a{
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .photo{
