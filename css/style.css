@@ -1,10 +1,5 @@
 @charset "utf-8";
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -68,11 +63,15 @@ table {
     height: 0;
 }
 
+p{
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
 body {
     width: 100%;
     background: #aff2db;
     font-family: 'Nunito', sans-serif;
-    line-height: 3em;
 }
 
 header{
@@ -89,18 +88,17 @@ header{
 .logo-container p{
     font-family: 'Saira Extra Condensed', sans-serif;
     color: #1baacc;
-    font-size: 6em;
+    font-size: 2em;
 }
 
 nav{
     width: 100%;
     text-align: center;
-    padding: 2% 0;
+    padding: 10px 0;
 }
 
 nav ul {
     margin: 0 auto;
-    padding: 30px;
     border-bottom: 1px solid #44b09e ;
     border-top: 1px solid #44b09e ;
     display: block;
@@ -109,8 +107,7 @@ nav ul {
 nav li a{
     text-decoration: none;
     color: #676566;
-    font-size: 1.8em;
-    padding: 20px;
+    font-size: 1em;
 }
 
 nav li a:hover{
@@ -119,12 +116,17 @@ nav li a:hover{
 
 nav ul li {
     display: inline;
-    font-size: 1.8em;
+    padding: 6px;
 }
 
 main{
     width: 100%;
 }
+.central-illustration img{
+    width: 100%;
+}
+
+/* central illustration */
 
 .central-illustration{
     width: 100%;
@@ -132,21 +134,21 @@ main{
 }
 
 h1 {
-    width: 750px;
+    width: 70%;
     margin: 0 auto;
     font-family: 'Saira Extra Condensed', sans-serif;
-    font-size: 4em;
+    font-size: 1.3em;
     color: #ffffff;
     background: #1baacc;
-    padding: 60px 20px;
+    padding: 30px 10px;
 }
 
 button{
     text-align: center;
     background: #f9ed32;
-    padding: 20px 60px;
+    padding: 10px 40px;
     font-family: 'Saira Extra Condensed', sans-serif;
-    font-size: 4em;
+    font-size: 1.3em;
     margin: 20px;
     border-radius: 80px;
 }
@@ -157,37 +159,38 @@ button a{
 }
 
 .about{
-    padding: 0 50px;
+    padding: 0 30px;
 }
 
 .about h2{
-    margin: 50px -50px;
+    margin: 10px -50px;
+}
+
+.about p{
+    padding: 10px 0;
 }
 
 h2 {
     font-family: 'Dosis', Futura,Trebuchet MS,Arial,sans-serif;
-    font-size: 2.5em;
+    font-size: 1.3em;
     border-bottom: 1px solid #1baacc ;
     border-top: 1px solid #1baacc ;
     color: #1baacc ;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     margin: 50px 0;
 }
 
+/**************** start courses list ***************/
 .ma-courses{
     width: 100%;
     background-color: #ffffff;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .courses-block{
-    width: 500px;
+    width: 200px;
     text-align: center;
-    margin: 0 auto;
-}
-
-.courses-block ul{
     margin: 0 auto;
 }
 
@@ -199,30 +202,45 @@ h2 {
     width: 100%;
 }
 
+.courses-block ul{
+    margin: 0 auto;
+}
+
+.courses-block img{
+    width: 100%;
+}
+
 .courses-block a{
     text-align: center;
     text-decoration: none;
-    font-size: 3.2em;
     color: #1baacc;
 }
 
 footer{
-    width: 100%;
     text-align: center;
     border-top: 1px solid #1baacc;
     border-bottom: 1px solid #1baacc;
 }
 
 footer p{
-    padding: 2% 0;
+    padding: 30px;
 }
-
 
 /*************************************************/
 /**************** RESPONSIVE-500PX ***************/
-/***********************************************
-/*
+/*************************************************/
+
 @media only screen and (min-width: 500px) {
+
+    .central-illustration{
+        margin: 0 auto;
+        width: 400px;
+    }
+
+    .about{
+        padding: 0 50px;
+    }
+
     .courses-block{
         width: 80%;
     }
@@ -236,10 +254,5 @@ footer p{
     .courses-block li{
         width: 30%;
     }
-    
-    .courses-block a{
-        font-size: 2em;
-        line-height: 1em;
-    }
-    
-}**/
+
+}
