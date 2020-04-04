@@ -268,6 +268,11 @@ footer p{
 
 @media only screen and (min-width: 830px){
 
+.logo-container {
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
 .courses-block, .about{
     width: 700px;
 }
@@ -276,12 +281,21 @@ footer p{
     margin: 0 auto;
 }
 
-.about h2{
+.about h2 {
     border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .first-block{
+    width: 900px;
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.central-illustration, .about{
+    width: 50%;
 }
 
 }
