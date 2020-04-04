@@ -70,10 +70,9 @@ table {
 
 body {
     width: 100%;
-    padding: 0 2em;
-    height: auto;
-    background: #f1f0f1;
-    font-family: 'Dosis', Futura,Trebuchet MS,Arial,sans-serif;
+    background: #aff2db;
+    font-family: 'Nunito', sans-serif;
+    line-height: 3em;
 }
 
 header{
@@ -83,11 +82,14 @@ header{
 
 .logo-container{
     width: 100%;
+    text-align: center;
+    padding: 30px;
 }
 
-.logo{
-    width: 18%;
-    margin: 0% 41%;
+.logo-container p{
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: #1baacc;
+    font-size: 6em;
 }
 
 nav{
@@ -98,6 +100,7 @@ nav{
 
 nav ul {
     margin: 0 auto;
+    padding: 30px;
     border-bottom: 1px solid #44b09e ;
     border-top: 1px solid #44b09e ;
     display: block;
@@ -106,8 +109,8 @@ nav ul {
 nav li a{
     text-decoration: none;
     color: #676566;
-    font-size: 1.4em;
-    padding: 3%;
+    font-size: 1.8em;
+    padding: 20px;
 }
 
 nav li a:hover{
@@ -116,119 +119,127 @@ nav li a:hover{
 
 nav ul li {
     display: inline;
+    font-size: 1.8em;
 }
 
 main{
     width: 100%;
 }
 
-.slider{
+.central-illustration{
     width: 100%;
-    background: url("../img/noemibis.uk.jpg") no-repeat;
-    padding: 10% 0;
-    background-size: 100%;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 h1 {
-    width: 611px;
+    width: 750px;
     margin: 0 auto;
-    font-family: 'Russo One', sans-serif;
-    font-size: 2em;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 4em;
     color: #ffffff;
-    background: rgba(68,176,157,0.8);
+    background: #1baacc;
     padding: 60px 20px;
 }
 
 button{
     text-align: center;
-    background: rgba(68,176,157,0.8);
-    padding: 10px 20px;
-    font-family: 'Russo One', sans-serif;
-    font-size: 1em;
+    background: #f9ed32;
+    padding: 20px 60px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 4em;
     margin: 20px;
+    border-radius: 80px;
 }
 
 button a{
-    color: #ffffff;
+    color: #808080;
     text-decoration: none;
 }
 
-.photo{
-    width: 100%;
+.about{
+    padding: 0 50px;
 }
 
-main p {
-    font-size: 1.1em;
-    line-height: 1.2;
-    padding-bottom: 10px;
+.about h2{
+    margin: 50px -50px;
 }
 
 h2 {
     font-family: 'Dosis', Futura,Trebuchet MS,Arial,sans-serif;
     font-size: 2.5em;
-    border-bottom: 1px solid #44b09e ;
-    border-top: 1px solid #44b09e ;
-    color: #44b09e ;
+    border-bottom: 1px solid #1baacc ;
+    border-top: 1px solid #1baacc ;
+    color: #1baacc ;
     text-align: center;
-    margin-bottom: 2%;
+    padding: 20px;
+    margin: 50px 0;
 }
 
-.courses{
+.ma-courses{
     width: 100%;
-    margin: 5% 0;
+    background-color: #ffffff;
+    padding-bottom: 100px;
+}
+
+.courses-block{
+    width: 500px;
     text-align: center;
+    margin: 0 auto;
 }
 
-.courses ul{
-    width: 90%;
-    margin: 0 13%;
+.courses-block ul{
+    margin: 0 auto;
 }
 
-.courses li{
-    width: 20%;
-    height: 187px;
-    float: left;
-    margin: 3%;
+.courses-block li{
+    padding: 10px;
 }
 
-.courses img{
+.courses-block img{
     width: 100%;
-    border-radius: 100px;
-    margin-bottom: 5%;
 }
 
-.courses a{
+.courses-block a{
+    text-align: center;
     text-decoration: none;
-    color: #090605;
-    font-size: 1.2em;
-}
-
-.courses a:hover{
-    text-decoration: none;
-    color: #44b09e ;
+    font-size: 3.2em;
+    color: #1baacc;
 }
 
 footer{
     width: 100%;
     text-align: center;
-    border-top: 1px solid #44b09e;
-    border-bottom: 1px solid #44b09e;
+    border-top: 1px solid #1baacc;
+    border-bottom: 1px solid #1baacc;
 }
 
 footer p{
     padding: 2% 0;
 }
 
-/*************************************************/
-/**************** RESPONSIVE-850PX ***************/
-/*************************************************/
 
-@media (min-width:850px) {
-
-    body {  
-        padding: 0 20%;
+/*************************************************/
+/**************** RESPONSIVE-500PX ***************/
+/***********************************************
+/*
+@media only screen and (min-width: 500px) {
+    .courses-block{
+        width: 80%;
     }
     
+    .courses-block ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
+    
+    .courses-block li{
+        width: 30%;
+    }
+    
+    .courses-block a{
+        font-size: 2em;
+        line-height: 1em;
+    }
+    
+}**/
