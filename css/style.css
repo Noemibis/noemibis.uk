@@ -102,6 +102,7 @@ nav ul {
     border-bottom: 1px solid #44b09e ;
     border-top: 1px solid #44b09e ;
     display: block;
+    padding: 6px;
 }
 
 nav li a{
@@ -163,7 +164,7 @@ button a{
 }
 
 .about h2{
-    margin: 10px -50px;
+    margin: 10px -30px;
 }
 
 .about p{
@@ -241,6 +242,10 @@ footer p{
         padding: 0 50px;
     }
 
+    .about h2{
+        margin: 10px -50px;
+    }
+
     .courses-block{
         width: 80%;
     }
@@ -254,5 +259,29 @@ footer p{
     .courses-block li{
         width: 30%;
     }
+
+}
+
+/*************************************************/
+/**************** RESPONSIVE-830PX ***************/
+/*************************************************/
+
+@media only screen and (min-width: 830px){
+
+.courses-block, .about{
+    width: 700px;
+}
+
+.about{
+    margin: 0 auto;
+}
+
+.about h2{
+    border: 0;
+}
+
+.first-block{
+    display: flex;
+}
 
 }
