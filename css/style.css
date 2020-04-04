@@ -70,8 +70,8 @@ table {
 
 body {
     width: 100%;
+    padding: 0 2em;
     height: auto;
-    padding: 0 20%;
     background: #f1f0f1;
     font-family: 'Dosis', Futura,Trebuchet MS,Arial,sans-serif;
 }
@@ -221,3 +221,14 @@ footer p{
     padding: 2% 0;
 }
 
+/*************************************************/
+/**************** RESPONSIVE-850PX ***************/
+/*************************************************/
+
+@media (min-width:850px) {
+
+    body {  
+        padding: 0 20%;
+    }
+    
+    }
