@@ -71,44 +71,42 @@ p{
 
 body {
     width: 100%;
-    background: #aff2db;
+    background: #be9ddf;
     font-family: 'Nunito', sans-serif;
 }
 
 header{
     width: 100%;
-    margin: 2% auto;
 }
 
 .logo-container{
     width: 100%;
     text-align: center;
-    padding: 30px;
+    padding: 20px 0 10px;
 }
 
 .logo-container p{
     font-family: 'Saira Extra Condensed', sans-serif;
-    color: #1baacc;
+    color: #f8e113;
     font-size: 2em;
 }
 
 nav{
     width: 100%;
     text-align: center;
-    padding: 10px 0;
 }
 
 nav ul {
     margin: 0 auto;
-    border-bottom: 1px solid #44b09e ;
-    border-top: 1px solid #44b09e ;
+    border-bottom: 1px solid #775cb1 ;
+    border-top: 1px solid #775cb1 ;
     display: block;
     padding: 6px;
 }
 
 nav li a{
     text-decoration: none;
-    color: #676566;
+    color: #5c458f;
     font-size: 1em;
 }
 
@@ -125,15 +123,15 @@ main{
     width: 100%;
 }
 
-.first-block{
-    background: #aff2db;
-}
-
 .central-illustration img{
     width: 100%;
 }
 
 /* central illustration */
+
+.first-block{ 
+    padding: 30px 0 20px;
+}
 
 .central-illustration{
     width: 100%;
@@ -146,7 +144,7 @@ h1 {
     font-family: 'Saira Extra Condensed', sans-serif;
     font-size: 1.3em;
     color: #ffffff;
-    background: #1baacc;
+    background: #775cb1;
     padding: 30px 10px;
 }
 
@@ -161,7 +159,7 @@ button{
 }
 
 button a{
-    color: #808080;
+    color: #494949;
     text-decoration: none;
 }
 
@@ -170,20 +168,23 @@ button a{
 }
 
 .about h2{
-    margin: 10px -30px;
-    border-bottom: 1px solid #1baacc ;
-    border-top: 1px solid #1baacc ;
-    padding: 5px;
+    color: #f9ed32;
 }
 
 .about p{
     padding: 10px 0;
+    color: #f1f1f1;
+}
+
+.about a{
+    color: #775cb1;
+    text-decoration: none;
 }
 
 h2 {
     font-family: 'Dosis', Futura,Trebuchet MS,Arial,sans-serif;
     font-size: 1.5em;
-    color: #1baacc ;
+    color: #eb9114;
     text-align: center;
     padding: 40px;
 }
@@ -191,7 +192,8 @@ h2 {
 /**************** start courses list ***************/
 .ma-courses{
     width: 100%;
-    background-color: #f5f5f4;
+    /*background-color: #f5f5f4;*/
+    background-color: #e3e9e5;
     padding-bottom: 50px;
 }
 
@@ -220,13 +222,11 @@ h2 {
 .courses-block a{
     text-align: center;
     text-decoration: none;
-    color: #1baacc;
+    color: #775cb1;
 }
 
 footer{
     text-align: center;
-    border-top: 1px solid #1baacc;
-    border-bottom: 1px solid #1baacc;
 }
 
 footer p{
@@ -238,6 +238,11 @@ footer p{
 /*************************************************/
 
 @media only screen and (min-width: 500px) {
+
+    nav ul {
+        border:0;
+    }
+    
 
     h1{
         width: 85%;
@@ -269,9 +274,8 @@ footer p{
 
 @media only screen and (min-width: 850px){
 
-.logo-container {
-    padding: 0px;
-    padding-bottom: 10px;
+.logo-container p {
+    font-size: 2.5em;
 }
 
 .courses-block, .about{
@@ -296,7 +300,7 @@ footer p{
 .about{
     width: 40%;
     margin: 0 auto;
-    padding: 73px 0 0 0;
+    padding: 0;
 }
 
 .about h2 {
