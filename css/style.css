@@ -66,6 +66,7 @@ table {
 p{
     font-size: 1em;
     line-height: 1.3em;
+    color: #3d3c3d;
 }
 
 body {
@@ -252,7 +253,7 @@ footer p{
     
     .courses-block ul{
         display: flex;
-        justify-content: space-between;
+        justify-content:center;
         flex-wrap: wrap;
     }
     
