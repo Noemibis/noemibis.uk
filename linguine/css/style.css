@@ -1,0 +1,288 @@
+/*for the contact us box*/
+*{
+    box-sizing: border-box;
+  }
+
+
+body{
+    height: 100%;
+    background: linear-gradient(#232224, #363233, #1d0c08);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    line-height: 25px;
+}
+
+main {
+    padding: 10px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+/**************** NAV ***************/
+
+nav{
+    padding: 0 20px 0;
+    text-align: center;
+}
+
+nav li{
+    display: inline;
+    margin-right: 10px;
+}
+
+nav img{
+    width: 50px;
+}
+
+/*logo*/
+.home-button{
+    width: 100%;
+    font-family: 'Pacifico', Helvetica, sans-serif;
+    font-size: 15pt;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-button img{
+    width: 100px;
+}
+
+.home-button a{
+    text-decoration: none;
+    color: tomato;
+}
+
+/**************** HOME-PAGE ***************/
+
+/* width for all the pages */
+.languagelist, .template{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.languagelist img{
+    width: 100%;
+}
+
+.languagelist a:hover, a:active{
+    font-weight: 600;
+}
+
+.small-description{
+    padding-top: 30px;
+}
+
+.small-description p{
+    color: #999999;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    width: 100%;
+    padding: 20px 0 10px;
+}
+
+footer p{ 
+    text-align: center;
+    color: #5c5c5c;
+}
+
+footer a, footer a:hover{
+    color: #999999;
+}
+
+/* social media icons from web */
+ion-icon {
+    font-size: 25px;
+    padding: 0 10px;
+}
+
+/*********** TEMPLATE LANGUAGES ***********/
+/* the template is the same for each language page */
+.template{
+    text-align: left;
+}
+
+.template h2{
+    font-size: 20pt;
+    text-align: center;
+}
+
+.template p, .template li{
+    font-size: 16px;
+}
+
+.template a{
+    color: tomato;
+    text-decoration: underline;
+}
+
+/* text in english */
+.eng{
+    color: rgb(202,205,204, 0.5);
+}
+
+.block img{
+    width: 100%;
+}
+
+/* to give space between senteces */
+.sentence{
+    padding-bottom: 20px;
+    line-height: 20px;
+}
+
+.sentence p{
+    margin: 0;
+}
+
+/**************** CONTACT FORM ***************/
+
+  .contact-form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .wrapper{
+    width: 350px;
+    background: #fff;
+    padding: 25px;
+    /*padding-right: 45px;*/
+    margin: 35px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px rgba(254,236,164,1); 
+  }
+  
+  .wrapper h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: tomato;
+  }
+  
+  .wrapper .input_field{
+    margin-bottom: 10px;
+  }
+  
+  .wrapper .input_field input[type="text"],
+  .wrapper textarea{
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .wrapper textarea{
+    resize: none;
+    height: 80px;
+  }
+  
+  .wrapper .btn input[type="submit"]{
+    border: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background: #fece0c;
+    color: #332902;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  #error_message{
+    margin-bottom: 20px;
+    background:tomato;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+  }
+
+/**************** ABOUT ***************/
+
+.block-text li{
+    list-style-type: disc;
+    padding-left: 10px;
+}
+
+
+/*************************************************/
+/**************** RESPONSIVE-850PX ***************/
+/*************************************************/
+
+@media (min-width:850px) {
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    /*overflow: auto;*/
+}
+
+.template{
+    overflow: auto;
+}
+
+.navigation-set{
+    width: 300px;
+}
+
+.languages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/******************************************/
+/*********** TEMPLATE LANGUAGES ***********/
+
+.template {
+    width: 850px;
+}
+
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two{
+    flex-direction: row-reverse;
+}
+
+.block-img, .block-text{
+    width: 50%;
+}
+
+}
+
+/*************************************************/
+/**************** RESPONSIVE-1100PX ***************/
+/*************************************************/
+
+@media (min-width:1100px) {
+
+/**************** HOME-PAGE ***************/
+    .languagelist{
+        width: 450px;
+    }
+
+}
+

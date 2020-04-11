@@ -203,6 +203,10 @@ h2 {
     margin: 0 auto;
 }
 
+.courses-block p{
+    padding-bottom: 10px;
+}
+
 .courses-block li{
     padding: 10px;
 }
